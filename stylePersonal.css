@@ -571,7 +571,7 @@ html,body{
         background-size: cover;
     }
     .gridimage ul li.item3 .bg{
-        background: url(/imgPersonal/parents.jpg);
+        background: url(/imgPersonal/parents.JPG);
         background-size: cover;
         background-position: center;
     }
@@ -581,7 +581,7 @@ html,body{
         background-position: top; 
     }
     .gridimage ul li.item5 .bg{
-        background: url(/imgPersonal/Me3.jpg);
+        background: url(/imgPersonal/Me3.JPG);
         background-size: cover;
         background-position: center; 
     }
