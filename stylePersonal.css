@@ -564,26 +564,26 @@ html,body{
         left: 100%;
     }
     .gridimage ul li.item1 .bg{
-        background: url(/imgPersonal/Me4.jpg);
+        background: url(imgPersonal/Me4.jpg);
         background-size: cover;
         background-position: center;
     }
     .gridimage ul li.item2 .bg{
-        background: url(/imgPersonal/Me5.jpg);
+        background: url(imgPersonal/Me5.jpg);
         background-size: cover;
     }
     .gridimage ul li.item3 .bg{
-        background: url(/imgPersonal/parents.JPG);
+        background: url(imgPersonal/parents.JPG);
         background-size: cover;
         background-position: center;
     }
     .gridimage ul li.item4 .bg{
-        background: url(/imgPersonal/Me1.jpg);
+        background: url(imgPersonal/Me1.jpg);
         background-size: cover;
         background-position: top; 
     }
     .gridimage ul li.item5 .bg{
-        background: url(/imgPersonal/Me3.JPG);
+        background: url(imgPersonal/Me3.JPG);
         background-size: cover;
         background-position: center; 
     }
