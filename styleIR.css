@@ -663,6 +663,9 @@ header{
     color: #ffffff;
     opacity: 0.2;
 }
+.skills span{
+    font-size: 7.5px;
+}
 .abilities .alllanguages{
     display: flex;
     flex-direction: row;
