@@ -231,7 +231,7 @@ header{
             .top-nav li a{
                 font-size: 20px;
             }
-            .nav-list{
+            header .nav-list{
                 flex-direction: column;
             }  
         }
