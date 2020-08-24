@@ -111,6 +111,16 @@ img{
             font-size: 60px;
         }
     }
+    @media screen and (max-width:440px){
+        .section-heading h1{
+            font-size: 50px;
+        }
+    }
+    @media screen and (max-width:365px){
+        .section-heading h1{
+            font-size: 45px;
+        }
+    }
     /*END OF SHARED MEDIA QUERIES*/
 
 
@@ -306,6 +316,11 @@ header{
             font-size: 60px;
         }
     }
+    @media screen and (max-width: 400px){
+        .landing-text h1{
+            font-size: 50px;
+        }
+    }
     /*END OF HEADER MEDIA QUERIES*/ 
 
 /*END OF HEADER*/
@@ -485,7 +500,6 @@ header{
             font-size: 13px;
         }
     }
-    
     @media screen and (max-width: 855px){
         .UofA,
         .McGill,
@@ -501,23 +515,23 @@ header{
             position: relative;
             left: 50%;
             transform: translateX(-50%);
-            font-size: 25px;
+            font-size: 18px;
         }
         .education .time{
             position: relative;
-            font-size: 16px;
+            font-size: 13px;
         }
         .McGill h1{
             position: relative;
             left: 50%;
             transform: translateX(-50%);
-            font-size: 25px;
+            font-size: 18px;
         }  
         .MELHS h1{
             position: relative;
             left: 50%;
             transform: translateX(-50%);
-            font-size: 25px;
+            font-size: 18px;
         }
         .education .description1{
             position: relative;
@@ -531,7 +545,11 @@ header{
         .MELHS h1{
             padding-top: 30px;
         }
-        
+    }
+    @media screen and (max-width: 500px){
+        .education .description1{
+            font-size: 14px;
+        }
     }
     /*END OF EDUCATION MEDIA QUERIES*/
     
@@ -564,7 +582,6 @@ header{
     }
     .work p{
         position: relative;
-        left: 10%;
         font-size: 15px;
     }
     .work .date{
@@ -578,33 +595,21 @@ header{
         margin-bottom: 0;
         border: none;
     }
-    .work .date::before,
-    .work .date::after{
+    .work .date::before{
         position: absolute;
         display: block;
         top: 10%;
         transform: translateY(-50%);
-    }
-    .work .date::before{
         content: attr(data-date);
-        left: -25rem;
+        left: -23rem;
         text-align: right;
         min-width: 12rem;
         font-size: 1.5rem;
     }
-    .work .date::after{
-        content: '';
-        box-shadow: 0 0 0 4px white;
-        border-radius: 100%;
-        left: -7.5rem;
-        height: 1.5rem;
-        width: 1.5rem;
-        background-color: #313534;
-    }
     .communityinvolvement ul{
         border-left: 4px solid #221e3f;
         border-radius: .8rem;
-        background-color: rgba(0,0,0,0.05);
+        background-color: rgba(0,0,0,0.4);
         margin: 0 auto;
         position: relative;
         padding: 5rem;
@@ -612,49 +617,129 @@ header{
         text-align: left;
         width: 70%;
         color: white;
-        left: 60%; 
+        left: 10%; 
     }
-
+    .communityinvolvement h1{
+        font-size: 20px;
+        font-weight: 300;
+        margin-bottom: 1rem;   
+    }
+    .communityinvolvement h2{
+        font-size: 14px;
+        opacity: 0.5;
+        margin-bottom: 20px;
+    }
+    .communityinvolvement .date{
+        border-bottom: 1px solid rgba(255,255,255, .1);
+        margin-bottom: 1rem;
+        padding-bottom: 1rem;
+        position: relative;     
+    }
+    .communityinvolvementk .date:last-of-type{
+        padding-bottom: 0;
+        margin-bottom: 0;
+        border: none;
+    }
+    .communityinvolvement .date::before{
+        content: attr(data-date);
+        left: -22rem;
+        text-align: right;
+        min-width: 12rem;
+        font-size: 1.5rem;
+        position: absolute;
+        display: block;
+        top: 10%;
+        transform: translateY(-50%);
+    }
         /*WORK AND VOLUNTEER MEDIA QUERIES*/
+        @media screen and (max-width: 900px){
+            .work .date::before{
+                font-size: 14px;
+                left: -20rem;
+            }
+            .communityinvolvement .date::before{
+                font-size: 14px;
+                left: -19rem;
+            }
+        }
         @media screen and (max-width: 750px){
             .work .date::before{
                 font-size: 12px;
-                left: -22rem;
+                left: -15rem;
             }
-        }
-        @media screen and (max-width: 650px){
-            .work h1{
-                font-size: 16px;
-            }
-            .work h2{
+            .communityinvolvement .date::before{
                 font-size: 12px;
+                left: -15rem;
             }
             .work p{
+                left: 0%;
+            }
+            .work ul{
+                padding: 1.5rem;
+            }
+            .communityinvolvement ul{
+                padding: 1.5rem;
+            }
+            
+        }
+        @media screen and (max-width: 670px){
+            .work h1,
+            .communityinvolvement h1{
+                font-size: 18px;
+            }
+            .work h2,
+            .communityinvolvement h2{
+                font-size: 13px;
+            }
+            .work p,
+            .communityinvolvement p{
                 font-size: 14px;
             } 
         }
         @media screen and (max-width: 620px){
             .work .date::before{
                 font-size: 10.5px;
-                left: -20.5rem;
+                
+            }
+            .communityinvolvement .date::before{
+                font-size: 10.5px;
             }   
         }
         @media screen and (max-width: 560px){
             .work .date::before{
                 font-size: 10.5px;
-                left: -18rem;
             }
             .work .date::after{
                 display: none; 
             } 
             .work h1{
-                font-size: 13px;
-            }
-            .work h2{
-                font-size: 10px;
+                font-size: 15px;
             }
             .work p{
                 font-size: 12px;
+            }
+            .communityinvolvement h1{
+                font-size: 16px;
+            }
+            .communityinvolvement h2{
+                font-size: 12px;
+            }
+        }
+        @media screen and (max-width: 500px){
+            .work ul{
+                left: 14%;
+            }
+            .work .date::before{
+                left: -14rem;
+            }
+        }
+        @media screen and (max-width: 390px){
+            .work ul{
+                left: 14%;
+            }
+            .work .date::before{
+                font-size: 9px;
+                left: -14.5rem;
             }
         }
         /*END OF WORK AND VOLUNTEER MEDIA QUERIES*/
@@ -667,23 +752,16 @@ header{
 
 
 /*ABILITIES*/
+#abilities h2{
+    font-size: 12px;
+}
+.skills span,
+.alllanguages span{
+    font-size: 9px;
+}
 .checked {
     color: #ffffff;
     opacity: 0.2;
-}
-.skills span{
-    font-size: 7.5px;
-}
-.abilities .alllanguages{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-
-}
-.abilities .languages{
-    padding-right: 50px;
 }
 .rowpl{
     position: relative;
@@ -692,37 +770,11 @@ header{
     justify-content: center;
     align-items: center; 
     width: 100%;
-}
-.paddingstar{
-    right: 0;
+    left: 12%;
 }
 .pl{
     width: 100%;
-    background-color: grey;
-    display: flex;
-    flex-direction: row;
-    padding: 10px;
-}
-.pl h2{
-    padding-right: 20px;
-}
-.pltext{
-    padding-right: 100px;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    left: 10%;
-    position: relative;
-
-}
-.plsplit{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-}
-.plsplit2{
-    padding-left: 10%;
-    width: 100%;
+    margin: 10px;
 }
 .programminglang{
     position: relative;
@@ -732,33 +784,62 @@ header{
     padding-left: 50px;
     padding-right: 50px;
 }
-#abilities h2{
-    font-size: 12px;
+.abilities .alllanguages{
+    display: flex;
+    flex-direction: row;
 }
-.skills span{
-    font-size: 8px;
+.abilities .languages{
+    padding-right: 50px;
+    position: relative;
+    left: 30%;
 }
-    @media screen and (max-width:650px){ 
-        .pl{
-            padding-right: 50px;
+    @media screen and (max-width:1100px){ 
+        .abilities .languages{
+            left: 25%;
+        }
+    }
+    @media screen and (max-width:830px){ 
+        .abilities .languages{
+            left: 20%;
+        }
+    }
+    @media screen and (max-width:700px){
+        .programminglang{
+            flex-direction: column;
         }
         .rowpl{
-            padding: 0px; 
+            left: 41%;
+        }
+        .abilities .alllanguages{
+            flex-direction: column;
         }
         .abilities .languages{
-            padding-right: 15px;
-        }
-        
-    }
-    @media screen and (max-width:426px){ 
-        .skills span{
-            font-size: 6.5px;
-        }
+            left: 40%;
+            padding: 10px;
+        } 
         #abilities h2{
-            font-size: 12px;
+            font-size: 11px;
         }
+        .skills span,
+        .alllanguages span{
+            font-size: 10px;
+        }  
     }
-
+    @media screen and (max-width:460px){
+        .programminglang{
+            flex-direction: column;
+        }
+        .rowpl{
+            left: 38%;
+        }
+        .abilities .alllanguages{
+            flex-direction: column;
+        }
+        .abilities .languages{
+            left: 35%;
+            padding: 10px;
+        }   
+    }
     /*END OF ABILITIES MEDIA QUERIES*/
 /*END OF ABILITIES*/
 
@@ -1306,6 +1387,11 @@ header{
 .contact{
     background-color: #12273b;
 }
+    @media screen and (max-width:800px){
+        .contact h2{
+            font-size: 14px;
+        }
+    }
 /*END OF CONTACT*/
 
 
@@ -1354,4 +1440,14 @@ header{
         box-shadow: 0 0 0 0 rgba(253, 87, 191, 0);
     }
 }
+    @media screen and (max-width: 475px){
+        .up{
+            width: 4rem;
+            height: 4rem;
+            right: 3rem;
+        }
+        .up i{
+            font-size: 1rem;
+        }
+    }
 /*END OF FOOTER*/
