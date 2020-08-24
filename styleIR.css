@@ -1,0 +1,1299 @@
+/*SHARED CONTENT*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+    font-family: 'Poppins';
+    color: white; 
+    width: 100%;
+    height: 100%; 
+}
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background: url("imgIR/Background19.jpg") no-repeat center fixed;
+    background-size: cover;
+    overflow-x: hidden;
+}
+section{
+    padding: 6rem 0;
+    width: 100%;
+}
+a{
+    text-decoration: none;
+    color: #eee;
+}
+li{
+    margin: 0 2rem;
+}
+p{
+    font-size: 1.8rem;
+    font-weight: 300;
+}
+img{
+    width: 100%;
+}
+.container{
+    width: 100%;
+    max-width: 120rem;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+.section-heading{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.section-heading h1{
+    font-size: 100px;
+    color: rgba(255,255,255, .65);
+    text-transform: uppercase;
+    font-weight: 300;
+    position: relative;
+    margin-bottom: 1rem;
+}
+.section-heading h1::before{
+    content: '';
+    position: absolute;
+    bottom: -.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255,255,255, .75);   
+}
+.section-heading h1::before{
+    width: 10rem;
+    height: 3px;
+    border-radius: .8rem;
+}
+.section-heading h6{
+    font-size: 20px;
+    font-weight: 300;
+    color: white;  
+}
+.line{
+    opacity: 0.5;
+    font-family: 'Pompiere', cursive;
+    text-align: center;
+    align-items: center;
+    padding-top: 50px;
+}
+.background{
+    border-radius: .8rem;
+    background-color: rgba(0,0,0,0.4);
+    margin: 0 auto;
+    position: relative;
+    padding: 5rem;
+    list-style: none;
+    text-align: left;
+    width: 100%;
+}
+.education .background{
+    left: 1%;
+}
+    /*SHARED MEDIA QUERIES*/
+    @media screen and (max-width:950px){
+        .section-heading h1{
+            font-size: 67px;
+        }
+        .section-heading h6{
+            font-size: 16px;
+        }
+    }
+    @media screen and (max-width:560px){
+        .section-heading h1{
+            font-size: 60px;
+        }
+    }
+    /*END OF SHARED MEDIA QUERIES*/
+
+
+/*END OF SHARED CONTENT*/
+
+
+
+
+
+/*HEADER*/
+header{
+    width: 100%;
+    height: 100vh;
+}
+    /*NAVIGATION*/
+    .top-nav{
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        z-index: 50;
+        top: -100vh;
+        background-color: #12273b;
+        border-bottom-left-radius: 100%;
+        border-bottom-right-radius: 100%;
+        transition: all 650ms cubic-bezier(1,0,0,1);
+    }
+    .nav-list{
+        list-style: none;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+    .top-nav li a{
+        font-size: 30px;
+    }
+    .nav-link{
+        font-family: 'Poppins';
+        font-size: 10px;
+        padding: 1rem;
+    }
+    .nav-link:hover,
+    .nav-link:focus{
+        /*background: linear-gradient(180deg, rgba(33,34,69,1) 20%, rgba(255,255,255,1) 70%);*/
+        background: #113251;
+        background: -webkit-linear-gradient(bottom, #113251, #FFFFFF);
+        background: -moz-linear-gradient(bottom, #113251, #FFFFFF);
+        background: linear-gradient(to top, #113251, #FFFFFF);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;  
+    }
+    .top-nav.open{
+        top: 0;
+        border-radius: initial;
+    }
+    .menu-toggler{
+        position: absolute;
+        top: 5rem;
+        right: 5rem;
+        width: 5rem;
+        height: 4rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        cursor: pointer;
+        z-index: 1500;
+        transition: transform 650ms ease-out;
+    }
+    .menu-toggler.open{
+        transform: rotate(-45deg);
+    }
+    .bar{
+        background: rgb(33,34,69);
+        background: linear-gradient(180deg, rgba(33,34,69,1) 20%, rgba(255,255,255,1) 70%);
+        width: 100%;
+        height: 4px;
+        border-radius: .8rem;
+    }
+    .bar.half{
+        width: 50%;
+    }
+    .bar.start{
+        transform-origin: right;
+        transition: transform 650ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
+    }
+    .open .bar.start{
+            transform: rotate(-450deg) translateX(.8rem);
+    }
+    .open .bar.end{
+        transform: rotate(-450deg) translateX(-.8rem);
+    }
+    .bar.end{
+        align-self: flex-end;
+        transform-origin: left;
+        transition: transform 650ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
+    }
+        /*NAVIGATION MEDIA QUERIES*/
+        @media screen and (max-width: 1500px){
+            .top-nav li a{
+                font-size: 25px;
+            }
+        }
+        @media screen and (max-width: 1315px){      
+            .nav-list{
+                flex-direction: row;
+            }
+            .icon-link{
+                margin: 20px;
+            }
+            li{
+                margin: 2rem 0;
+            }
+            .top-nav li a{
+                font-size: 20px;
+            }  
+        }
+        @media screen and (max-width: 900px){
+            .top-nav li a{
+                font-size: 15px;
+            }
+        }
+        @media screen and (max-width: 600px){
+            .menu-toggler{
+                top: 2rem;
+                right: 2rem;
+            }
+        }
+        /*END OF NAVIGATION MEDIA QUERIES*/
+
+    /*END OF NAVIGATION*/
+
+    /*HEADER TEXT*/
+    .landing-text{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        text-align: center;
+        z-index: 1;
+    }
+    .landing-text h1{
+        font-size: 20rem;
+        font-family: 'Poppins', cursive;
+        background: #113251;
+        background: -webkit-linear-gradient(bottom, #113251, #FFFFFF);
+        background: -moz-linear-gradient(bottom, #113251, #FFFFFF);
+        background: linear-gradient(to top, #113251, #FFFFFF);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        padding: 1rem;
+        user-select: none;
+        text-transform: uppercase;
+    }
+    .landing-text h6{
+        font-size: 2rem;
+        font-weight: 400;
+        color: white;
+    }
+    /*END OF HEADER TEXT*/
+
+    /*HEADER MEDIA QUERIES*/
+    @media screen and (max-width: 1250px){
+        .landing-text h1{
+            font-size: 150px;
+        }
+    }
+    @media screen and (max-width: 945px){
+        .landing-text h1{
+            font-size: 120px;
+        }
+    }
+    @media screen and (max-width: 768px){
+        .landing-text h1{
+            font-size: 100px;
+        }
+    }
+    @media screen and (max-width: 640px){
+        .landing-text h1{
+            font-size: 80px;
+        }
+    }
+    @media screen and (max-width: 520px){
+        .landing-text h1{
+            font-size: 60px;
+        }
+    }
+    /*END OF HEADER MEDIA QUERIES*/ 
+
+/*END OF HEADER*/
+
+
+
+/*ABOUT*/
+.about .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.about-heading{
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 0;
+    margin-bottom: 6rem;
+}
+.about-heading h1{
+    font-size: 100px;
+    opacity: .5;
+}
+.about-heading h6{
+    font-size: 20px;
+    font-weight: 300;
+}
+.profile-img{
+    position: relative;
+    flex: 0.5;
+    margin-right: 5rem;    
+}
+.about-details{
+    flex: 1;
+}
+.social-media{
+    margin-top: 5rem;
+}
+.social-media i{
+    font-size: 5rem;
+    transition: color 650ms;
+}
+.fa-facebook-square:hover{
+    color: #4267b2;
+}
+.fa-twitter-square:hover{
+    color: #1da1f2;
+}
+.fa-instagram:hover{
+    color: #c32aa3;
+}
+.fa-linkedin-square:hover{
+    color:  #007bb5;
+}
+.about .firsttext{
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    font-size: 25px;
+}
+.about .secondtext{
+    font-size: 14px;
+}
+    /*ABOUT MEDIA QUERIES*/
+    @media screen and (max-width: 1213px){
+        .about .secondtext{
+            font-size: 12px;
+        }
+    }
+    @media screen and (max-width: 990px){
+        .about .firsttext{
+            font-size: 20px;
+        }
+        .social-media i{
+            font-size: 40px;
+        }
+    }
+    @media screen and (max-width: 850px){
+        .about .container{
+            flex-direction: column;
+        }
+        .profile-img{
+            margin: 0 0 7rem 0;
+            flex: 0.1;
+            width: 40%;
+        }
+     }
+    /*END OF ABOUT MEDIA QUERIES*/
+/*END OF ABOUT*/
+
+
+
+
+
+
+/*EXPERIENCE*/
+    /*EDUCATION*/
+    .experience .title,
+    .abilities .title,
+    .achievements .title,
+    .personalactivities .title{
+        font-size: 35px;
+        padding: 0 0 20px 0;
+        text-transform: uppercase;
+    }
+    .UofA,
+    .McGill,
+    .MELHS{
+        position: relative;
+        left: 5%;
+        padding: 50px 0;  
+    }
+    .UofA{
+        padding-bottom: 150px;
+    }
+    .UofA .description2{
+        position: absolute;
+        left: 30%;
+        top: 30%;
+        font-size: 15px;
+        opacity: 0.6;
+        padding: 0 0 40px 0; 
+    }
+    .education h1{
+        font-size: 20px;
+    }
+    .education .time{
+        font-size: 15px;
+        opacity: 0.6;
+    }
+    .education .description1{
+        position: absolute;
+        left: 30%;
+        top: 0%;
+        font-size: 20px;
+        padding: 50px 0 0 0;  
+    }
+    .McGill .description2,
+    .MELHS .description2{
+        position: absolute;
+        left: 30%;
+        top: 50%;
+        font-size: 15px;
+        opacity: 0.6;
+        padding: 0 0 40px 0;    
+    }
+    /*END OF EDUCATION*/
+
+    /*EDUCATION MEDIA QUERIES*/
+    @media screen and (max-width: 1200px){
+        .education .description2{
+            font-size: 14px;
+        }
+        .education .time{
+            font-size: 14px;
+        }
+    }
+    @media screen and (max-width: 1010px){
+        .education h1{
+            font-size: 16px;
+        }
+        .education .description1{
+            font-size: 16px;
+        }
+        .education .description2{
+            font-size: 13px;
+        }
+        .education .time{
+            font-size: 13px;
+        }
+    }
+    
+    @media screen and (max-width: 855px){
+        .UofA,
+        .McGill,
+        .MELHS{
+            position: relative;
+            left: 5%;
+            padding: 0px 0;  
+        }
+        .UofA{
+            padding-bottom: 40px;    
+        }
+        .UofA h1{
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 25px;
+        }
+        .education .time{
+            position: relative;
+            font-size: 16px;
+        }
+        .McGill h1{
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 25px;
+        }  
+        .MELHS h1{
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 25px;
+        }
+        .education .description1{
+            position: relative;
+            left: 0%;
+            padding: 5px 0 0 0;
+        }
+        .education .description2{
+            position: relative;
+            left: 0%;
+        }
+        .MELHS h1{
+            padding-top: 30px;
+        }
+        
+    }
+    /*END OF EDUCATION MEDIA QUERIES*/
+    
+  
+
+
+    /*WORK AND COMUNNITY INVOLVEMENT*/
+    .work ul{
+        border-left: 4px solid #221e3f;
+        border-radius: .8rem;
+        background-color: rgba(0,0,0,0.4);
+        margin: 0 auto;
+        position: relative;
+        padding: 5rem;
+        list-style: none;
+        text-align: left;
+        width: 70%;
+        color: white;
+        left: 10%; 
+    }
+    .work h1{
+        font-size: 20px;
+        font-weight: 300;
+        margin-bottom: 1rem;   
+    }
+    .work h2{
+        font-size: 14px;
+        opacity: 0.5;
+        margin-bottom: 20px;
+    }
+    .work p{
+        position: relative;
+        left: 10%;
+        font-size: 15px;
+    }
+    .work .date{
+        border-bottom: 1px solid rgba(255,255,255, .1);
+        margin-bottom: 1rem;
+        padding-bottom: 1rem;
+        position: relative;     
+    }
+    .work .date:last-of-type{
+        padding-bottom: 0;
+        margin-bottom: 0;
+        border: none;
+    }
+    .work .date::before,
+    .work .date::after{
+        position: absolute;
+        display: block;
+        top: 10%;
+        transform: translateY(-50%);
+    }
+    .work .date::before{
+        content: attr(data-date);
+        left: -25rem;
+        text-align: right;
+        min-width: 12rem;
+        font-size: 1.5rem;
+    }
+    .work .date::after{
+        content: '';
+        box-shadow: 0 0 0 4px white;
+        border-radius: 100%;
+        left: -7.5rem;
+        height: 1.5rem;
+        width: 1.5rem;
+        background-color: #313534;
+    }
+    .communityinvolvement ul{
+        border-left: 4px solid #221e3f;
+        border-radius: .8rem;
+        background-color: rgba(0,0,0,0.05);
+        margin: 0 auto;
+        position: relative;
+        padding: 5rem;
+        list-style: none;
+        text-align: left;
+        width: 70%;
+        color: white;
+        left: 60%; 
+    }
+
+        /*WORK AND VOLUNTEER MEDIA QUERIES*/
+        @media screen and (max-width: 750px){
+            .work .date::before{
+                font-size: 12px;
+                left: -22rem;
+            }
+        }
+        @media screen and (max-width: 650px){
+            .work h1{
+                font-size: 16px;
+            }
+            .work h2{
+                font-size: 12px;
+            }
+            .work p{
+                font-size: 14px;
+            } 
+        }
+        @media screen and (max-width: 620px){
+            .work .date::before{
+                font-size: 10.5px;
+                left: -20.5rem;
+            }   
+        }
+        @media screen and (max-width: 560px){
+            .work .date::before{
+                font-size: 10.5px;
+                left: -18rem;
+            }
+            .work .date::after{
+                display: none; 
+            } 
+            .work h1{
+                font-size: 13px;
+            }
+            .work h2{
+                font-size: 10px;
+            }
+            .work p{
+                font-size: 12px;
+            }
+        }
+        /*END OF WORK AND VOLUNTEER MEDIA QUERIES*/
+
+    /*END OF WORK AND COMUNNITY INVOLVEMENT*/
+
+/*END OF EXPERIENCE*/
+
+
+
+
+/*ABILITIES*/
+.checked {
+    color: #ffffff;
+    opacity: 0.2;
+}
+.abilities .alllanguages{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.abilities .languages{
+    padding-right: 50px;
+}
+.rowpl{
+    position: relative;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; 
+    left: 50px;
+}
+.pl{
+    padding-right: 100px;
+}
+.programminglang span{
+    padding-bottom: 40px; 
+}
+
+.programminglang{
+    position: relative;
+    
+    
+}
+    @media screen and (max-width:650px){ 
+        .pl{
+            padding-right: 50px;
+        }
+        .rowpl{
+            padding: 0px; 
+        }
+        .abilities .languages{
+            padding-right: 15px;
+        }
+        
+    }
+    /*END OF ABILITIES MEDIA QUERIES*/
+/*END OF ABILITIES*/
+
+
+
+
+
+/*ACHIEVEMENTS*/
+.awardsscholarships, .certificates{
+    position: relative;
+    justify-content: center;
+    align-items: center; 
+}
+.AandS,
+.cert{
+    position: relative;
+    left: 25%;
+    font-size: 20px;
+}
+.AandSTime,
+.certtime{
+    position: relative;
+    left: 25%;
+    opacity: 0.5;
+    font-size: 15px;
+}
+    /*ACHIEVEMENTS MEDIA QUERIES*/
+    @media screen and (max-width:900px){
+        .AandS, .cert{
+            font-size: 16px;         
+        }
+        .AandSTime, .certtime{
+            font-size: 12px;   
+        }
+    }
+    @media screen and (max-width:750px){
+        .AandS, .cert{
+            font-size: 14px;    
+        }
+        .AandSTime, .certtime{
+            font-size: 12px; 
+        }
+    }
+    @media screen and (max-width:670px){
+        .AandS, .cert{
+            left: 15%;
+        }
+        .AandSTime, .certtime{
+            left: 15%;
+        }
+    }
+    @media screen and (max-width:585px){
+        .AandS, .cert{
+            left: 10%;
+        }
+        .AandSTime, .certtime{
+            left: 10%;
+        }
+    }
+    /*ACHIEVEMENTS MEDIA QUERIES*/
+
+/*END OF ACHIEVEMENTS*/
+
+
+
+
+
+/*PERSONAL ACTIVITIES*/
+    /*CLUBS*/
+    .snowboarding .image,
+    .volleyball .image,
+    .slopitch .image,
+    .badminton .image{
+        position: relative;
+        width: 40%;
+    }
+        /*SNOWBOARDING AND SLOPITCH TEXT*/
+        .clubs .snowboarding,
+        .clubs .slopitch{
+            position: relative;
+            left: 50%;
+            margin-bottom: 50px;
+        }
+        .slopitch .text,
+        .snowboarding .text{
+            position: absolute;
+            font-size: 30px;
+            top: 35%;
+            left: -32%;
+            opacity: 0.5;
+            text-transform: uppercase;
+        }
+        .slopitch .text1{
+            position: absolute;
+            font-size: 22px;
+            top: 50%;
+            left: -48.5%;
+        }
+        .slopitch .text2{
+            position: absolute;
+            font-size: 18px;
+            top: 60%;
+            left: -48.5%;
+            opacity: 0.5;
+        }
+        /*END OF SNOWBOARDING AND SLOPITCH TEXT*/
+
+        /*VOLLEYBALL AND BADMINTON TEXT*/
+        .clubs .volleyball,
+        .clubs .badminton{
+            position: relative;
+            left: 15%;
+            margin-bottom: 50px;
+        }
+        .volleyball .text,
+        .badminton .text{
+            position: absolute;
+            font-size: 30px;
+            top: 22%;
+            left: 60%;
+            opacity: 0.5;
+            text-transform: uppercase;
+        }
+        .volleyball .text1{
+            position: absolute;
+            font-size: 22px;
+            top: 35%;
+            left: 45%;
+        }
+        .volleyball .text2{
+            position: absolute;
+            font-size: 18px;
+            top: 45%;
+            left: 45%;
+            opacity: 0.5;
+        }
+        .volleyball .text3{
+            position: absolute;
+            font-size: 22px;
+            top: 60%;
+            left: 45%;
+        }
+        .volleyball .text4{
+            position: absolute;
+            font-size: 18px;
+            top: 70%;
+            left: 45%;
+            opacity: 0.5;
+        }
+        .badminton .text1{
+            position: absolute;
+            font-size: 22px;
+            top: 40%;
+            left: 45%;
+        }
+        .badminton .text2{
+            position: absolute;
+            font-size: 18px;
+            top: 50%;
+            left: 45%;
+            opacity: 0.5;
+        }
+        /*END OF VOLLEYBALL AND BADMINTON TEXT*/
+
+        /*CLUBS & SPORTS MEDIA QUERIES*/
+        @media screen and (max-width:1550px){
+            .volleyball .text,
+            .badminton .text{
+                font-size: 20px;
+                left: 55%;
+            }
+            .slopitch .text,
+            .snowboarding .text{
+                font-size: 20px;
+                left: -20%;
+            }
+            .volleyball .text1,
+            .volleyball .text2,
+            .volleyball .text3,
+            .volleyball .text4{
+                font-size: 15px;
+                left: 42%;
+            }
+            .slopitch .text1,
+            .slopitch .text2{
+                font-size: 15px;
+                left: -33%;
+            }
+            .badminton .text1,
+            .badminton .text2{
+                font-size: 15px;
+                left: 43%;
+            }
+        }
+        @media screen and (max-width:1130px){
+            .snowboarding .image,
+            .volleyball .image,
+            .slopitch .image,
+            .badminton .image{
+                width: 30%;
+            }
+            .slopitch .text,
+            .snowboarding .text{
+                font-size: 20px;
+                left: -25%;
+            }
+            .volleyball .text,
+            .badminton .text{
+                font-size: 20px;
+                left: 45%;
+            }
+            .volleyball .text1,
+            .volleyball .text2,
+            .volleyball .text3,
+            .volleyball .text4{
+                font-size: 15px;
+                left: 32%;
+            }
+            .slopitch .text1,
+            .slopitch .text2{
+                font-size: 15px;
+                left: -38%;
+            }
+            .badminton .text1,
+            .badminton .text2{
+                font-size: 15px;
+                left: 33%;
+            }
+        }
+        @media screen and (max-width:975px){
+            .clubs .snowboarding,
+            .clubs .slopitch,
+            .clubs .volleyball,
+            .clubs .badminton{
+                position: relative;
+                left: 0%;
+                margin-bottom: 50px;          
+            }
+            .snowboarding .image,
+            .volleyball .image,
+            .slopitch .image,
+            .badminton .image{
+                position: relative;
+                width: 60%;
+                left: 20%;
+                align-items: center;
+            }
+            .slopitch .text,
+            .snowboarding .text,
+            .volleyball .text,
+            .badminton .text{
+                position: relative;
+                font-size: 20px;
+                left: 0;
+                text-align: center;
+            }
+            .slopitch .text1,
+            .volleyball .text1,
+            .volleyball .text3,
+            .badminton .text1{
+                position: relative;
+                font-size: 15px;
+                left: 0;
+                text-align: center;     
+            }
+            .slopitch .text2,
+            .volleyball .text2,
+            .volleyball .text4,
+            .badminton .text2{
+                position: relative;
+                font-size: 12px;
+                left: 0;
+                text-align: center;  
+            }
+        }
+        @media screen and (max-width:550px){
+            .snowboarding .image,
+            .volleyball .image,
+            .slopitch .image,
+            .badminton .image{
+                width: 70%;
+                left: 15%;
+            }
+        }
+        /*END OF CLUBS & SPORTS MEDIA QUERIES*/
+
+    /*END OF CLUBS*/
+
+    /*INTERESTS*/
+    .interest{
+        position: relative;
+    }
+    .interest1,
+    .interest2,
+    .interest3,
+    .interest4,
+    .interest5{
+        transition: 1s ease-in-out;
+        position: relative;
+        cursor: pointer;
+        width: 100%;
+        margin: 5px;
+        justify-content: center;
+        align-items: center;
+        left: 15px;
+        display: flex;
+        flex-direction: column;   
+    }
+    .interest4,
+    .interest5{
+        width: 40%;
+    }
+    .classone,
+    .classtwo{
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        justify-content: center;
+        align-items: center;   
+    }
+    .interest1 .overlay,
+    .interest2 .overlay,
+    .interest3 .overlay,
+    .interest4 .overlay,
+    .interest5 .overlay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: 0.5s ease;
+        background: #eee;
+        color: black;
+    }
+    .interest1:hover .overlay,
+    .interest2:hover .overlay,
+    .interest3:hover .overlay,
+    .interest4:hover .overlay,
+    .interest5:hover .overlay{
+        opacity: 0.9;
+        filter: brightness(0.5) grayscale(1);
+    }
+    .interest1 .content1,
+    .interest2 .content1,
+    .interest3 .content1,
+    .interest4 .content1,
+    .interest5 .content1{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 20px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    .interest4 span{
+        text-transform: capitalize;
+        font-weight: 100;
+        font-size: 14px;
+    }
+        /*GUITAR, PHOTOGRAPHY, CUBING*/
+        .guitar,
+        .photography,
+        .cubing{
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px;
+            width: 50%;
+        }
+        .interest .image{
+            display: flex;
+            flex-direction: column;
+        }
+        .guitar .text,
+        .photography .text,
+        .cubing .text{
+            font-size: 25px;
+        }
+        .guitar .text1,
+        .photography .text1,
+        .cubing .text1{
+            font-size: 18px;
+        }
+        /*END OF GUITAR, PHOTOGRAPHY, CUBING*/
+        
+    /*END OF INTERESTS*/    
+
+    /*PROJECTS*/
+        .project1,
+        .project2,
+        .project3{
+            transition: 1s ease-in-out;
+            position: relative;
+            cursor: pointer;
+            height: 100%;
+            width: 100%;
+            margin: 10px;
+            justify-content: center;
+            align-items: center;
+               
+        }
+        .project3{
+            width: 48.3%;
+        }
+        .classone{
+            display: flex;
+            flex-direction: row;  
+        }
+        .classtwo{
+            display: flex;
+            flex-direction: row; 
+        }
+        .project1 .overlay,
+        .project2 .overlay,
+        .project3 .overlay{
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: 0.5s ease;
+            background: #eee;
+            color: black;
+        }
+        .project1 .content1,
+        .project2 .content1{
+            position: absolute;
+            top: 10%;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 28px;
+            text-transform: uppercase;
+        }
+        .project3 .content1{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 28px;
+            text-transform: uppercase;
+        }
+        .project1 .content2,
+        .project2 .content2,
+        .project3 .content2{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 16px;
+            text-align: center;
+        }
+        .project1:hover .overlay,
+        .project2:hover .overlay,
+        .project3:hover .overlay{
+            opacity: 0.9;
+            filter: brightness(0.5) grayscale(1);
+        }
+    /*END OF PROJECTS*/
+
+    /*INTEREST AND PROJECT MEDIA QUERIES*/
+    @media screen and (max-width:1250px){
+        .classone{
+            display: initial; 
+            width: 10%; 
+        }
+        .classtwo{
+            display: initial; 
+            width: 100%; 
+        }
+        .project1,
+        .project2,
+        .project3{
+            width: 70%;
+            left: 15%;     
+        }
+        
+        .interest1,
+        .interest2,
+        .interest3,
+        .interest4,
+        .interest5{
+            width: 70%;
+            left: 15%;
+        }
+    }
+    @media screen and (max-width:820px){
+        .project1 .content1,
+        .project2 .content1,
+        .project3 .content1{
+            font-size: 22px;       
+        }
+        .project1 .content2,
+        .project2 .content2,
+        .project3 .content2{
+            font-size: 12px;    
+        }
+    }
+    @media screen and (max-width:645px){
+        .project1 .content1,
+        .project2 .content1,
+        .project3 .content1{
+            font-size: 16px;   
+        }
+        .project1 .content2,
+        .project2 .content2,
+        .project3 .content2{
+            font-size: 12px;    
+        }
+    }
+    @media screen and (max-width:560px){
+        
+        .project1 .content2,
+        .project2 .content2,
+        .project3 .content2{   
+            top: 60%;      
+        }
+    }
+    /*END OF INTEREST AND PROJECT MEDIA QUERIES*/
+
+/*END OF PERSONAL ACTIVITIES*/
+
+
+
+
+/*CONTACT*/
+.bodytext{
+    padding-top: 30px;
+    text-align: center;
+    font-size: 14px;
+}
+.bodytext h1 {
+    font-size: 30px;
+    padding-bottom: 30px;
+}
+.contact{
+    background-color: #12273b;
+}
+/*END OF CONTACT*/
+
+
+
+
+
+
+/*FOOTER*/
+.copyright{
+    width: 100%;
+    text-align: center;
+    background-color: #0c1a27;
+    padding: 2rem 0;
+    position: relative;
+    color: white;
+}
+.up{
+    position: absolute;
+    width: 5rem;
+    height: 5rem;
+    background-color: white;
+    top: -2.5rem;
+    right: 5rem;
+    border-radius: 100%;
+    display: flex;
+    animation: pulse 1.5s infinite;
+    cursor: pointer;
+}
+.up i{
+    color: #12273b;
+    font-size: 2rem;
+    margin: auto;
+}
+.copyright p{
+    font-size: 1.4rem;
+}
+@keyframes pulse{
+    0%{
+        box-shadow: 0 0 0 0 white;
+    }
+    70%{
+        box-shadow: 0 0 0 2rem rgba(253, 87, 191, 0);
+
+    }
+    100%{
+        box-shadow: 0 0 0 0 rgba(253, 87, 191, 0);
+    }
+}
+/*END OF FOOTER*/

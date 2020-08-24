@@ -1,0 +1,255 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    padding: 0;
+    width: auto;
+    height: auto;
+    overflow-x: hidden;
+    background: url("img/Background20.jpg") no-repeat center fixed;
+    background-size: cover;
+    animation: slide 32s infinite;
+    animation-delay: 3s;   
+}
+#slider{
+    height: 100vh;
+}
+#welcomepage{
+    height: 100vh;
+    background-attachment: fixed;
+}
+#mywork{
+    height: 100vh;
+    position: relative;
+    display: flex; 
+}
+#welcomepage h1{
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    position: absolute; 
+    top: 50%;
+    padding: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: auto;
+    font-size: 40px;
+}
+li{
+    list-style-type: none;  
+}
+#mywork h1{
+    position: relative;
+    display: initial;
+}
+#projects{
+    min-height: 100vh;
+    position: relative;
+    width: 100%;  
+}   
+.project1,
+.project2,
+.project3{
+    transition: 1s ease-in-out;
+    position: relative;
+    height: 50%;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 20px 0;    
+}    
+img{
+    width: 100%;
+    position: relative;       
+}    
+.classone{
+    position: absolute;
+    flex-direction: row;  
+}
+.project1 .overlay,
+.project2 .overlay,
+.project3 .overlay{
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translateX(-50%);  
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 0.5s ease;
+    background: #eee;
+    color: black;   
+}
+.project1 .content1,
+.project2 .content1,
+.project3 .content1{
+    position: relative;
+    width: auto; 
+    top: 30%;
+    text-align: center;
+    letter-spacing: 8px;
+    font-size: 25px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.project1:hover .overlay,
+.project2:hover .overlay,
+.project3:hover .overlay{
+    opacity: 0.9;
+    filter: brightness(0.5) grayscale(1);
+}
+#projects a{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 25px;
+    text-align: center;
+    border: 2px solid black;
+    padding: 5px 50px;
+    text-decoration: none;
+    transition: 0.5s ease;
+}
+#projects a:hover{
+    color: white;
+    border: 2px solid white;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 2rem 0;
+    position: relative;
+    color: white;
+    top: 80%;
+}
+.down{
+    position: absolute;
+    width: 3rem;
+    height: 3rem;
+    background-color: white;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 100%;
+    display: flex;
+    animation: pulse 1.5s infinite;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.5s ease;
+}
+.down i{
+    color: #12273b;
+    font-size: 0.7rem;
+    margin: auto; 
+}
+@keyframes pulse{
+    0%{
+        box-shadow: 0 0 0 0 white;
+    }
+    70%{
+        box-shadow: 0 0 0 1.5rem rgba(253, 87, 191, 0);
+
+    }
+    100%{
+        box-shadow: 0 0 0 0 rgba(253, 87, 191, 0);
+    }
+}
+@keyframes slide{
+    25%{
+        background: url("img/Background24.jpg") no-repeat center fixed;
+        background-size: cover;
+    }
+    50%{
+        background: url("img/Background10.jpg") no-repeat center fixed;
+        background-size: cover;
+    }
+    75%{
+        background: url("img/Background27.jpg") no-repeat center fixed;
+        background-size: cover;
+    }
+    100%{
+        background: url("img/Background20.jpg") no-repeat center fixed;
+        background-size: cover;
+    }
+}
+@media screen and (max-width: 1300px){
+    .project1,
+    .project2,
+    .project3{    
+        width: 70%;          
+    }
+    .project1 .content1,
+    .project2 .content1,
+    .project3 .content1{
+        font-size: 20px;
+    }
+    #projects a{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 940px){
+    #welcomepage h1{
+        font-size: 30px;
+    }
+    .project1 .content1,
+    .project2 .content1,
+    .project3 .content1{
+        font-size: 16px;
+    }
+    #projects a{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 700px){
+    #welcomepage h1{
+        font-size: 20px;
+    }
+    .project1,
+    .project2,
+    .project3{    
+        width: 95%;          
+    }
+    .project1 .content1,
+    .project2 .content1,
+    .project3 .content1{
+        font-size: 13px;
+    }
+    #projects a{
+        font-size: 13px;
+    }
+}
+@media screen and (max-width: 375px){
+    #welcomepage h1{
+        font-size: 15px;
+    }
+    .down{
+        width: 2rem;
+        height: 2rem;
+    }
+    .down i{
+        font-size: 0.5rem; 
+    }
+}
+@media screen and (max-width: 320px){
+    #welcomepage h1{
+        font-size: 12px;
+    }
+}
+@media screen and (min-width: 2560px){
+    .project1,
+    .project2,
+    .project3{
+        width: 80%;
+        left: 68%;
+    }
+}

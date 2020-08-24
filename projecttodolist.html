@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styleProjects.css">
+    <title>To-Do List</title>
+</head>
+<body>
+    <section id="todo">
+        <img class="image" src="/imgProjects/VincentYeeLogo.png" alt="logo">
+        <h1>Vincent Yee </h1>   
+        <h2>Projects</h2>
+        <nav>
+            <ul>
+                <li><a href="projecttodolist.html">To-Do List</a></li>   
+                <li><a href="projectcalculator.html">Calculator</a></li>
+            </ul>
+        </nav>
+    <div>
+        <div class="input"><input type="text" class="txtb" placeholder="Add a task..."></div>
+        <div class="notcomp">
+            <h3>Not Completed</h3>  
+        </div>
+        <div class="comp">
+            <h3>Completed</h3> 
+        </div>
+    </div>
+    <script>
+        $(".txtb").on("keyup", function(e){
+            if(e.keyCode ==13 && $(".txtb").val() !="" ){
+                var task = $("<div class='task'></div>").text($(".txtb").val());
+                var del = $("<i class='fas fa-trash-alt'></i>").click(function(){
+                    var p = $(this).parent();
+                    p.fadeOut(function(){
+                        p.remove();
+                    });
+                });
+                var check = $("<i class='fas fa-check-circle'></i>").click(function(){
+                    var p = $(this).parent();
+                    p.fadeOut(function(){
+                        $(".comp").append(p);
+                        p.fadeIn();
+                    });
+                    $(this).remove();
+                });
+                task.append(del, check);
+                $(".notcomp").append(task);
+                $(".txtb").val("");
+            } 
+        })
+    </script>
+    </section>
+</body>
+</html>

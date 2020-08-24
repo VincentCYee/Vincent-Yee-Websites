@@ -1,0 +1,240 @@
+/*SHARED CONTENT*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-seriff;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; 
+    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
+}
+h1{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 60px; 
+    color: white;
+    text-transform: uppercase;  
+}
+h2{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 30px; 
+    color: white;
+    text-transform: uppercase; 
+    padding-bottom: 30px;
+}
+nav{
+    position: relative;
+    min-height: 10vh;
+    width: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-bottom: 2px solid white;   
+}
+ul{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    left: 50%;
+    top: 20%;
+    transform: translateX(-50%);  
+    list-style-type: none;
+}
+ul li{
+    padding: 20px;
+    width: 140px;    
+}
+ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+}
+.image{
+    width: 70px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-bottom: 50px;
+   
+}
+/*END OF SHARED CONTENT*/
+
+
+
+
+
+/*TO DO LIST*/
+#todo{
+    position: absolute;
+    width: 100%;
+    min-height: 100vh;
+    left: 50%;
+    transform: translateX(-50%);
+    background-image: url(imgProjects/Background11.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.txtb{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    border: none;
+    border-bottom: 2px solid white;
+    background: none;
+    padding: 30px 0 10px 0;
+    outline: none;
+    font-size: 18px;
+    color: white;
+}
+.input{
+    padding-bottom: 20px;
+}
+::placeholder{
+ color: white;
+}
+h3{
+    color: white;
+    position: relative;
+    left: 25%;
+    padding: 20px 5px;
+    width: 50%;
+    background-color: #425b73;
+    border-bottom: 2px solid white;   
+}
+.task{
+    width:48%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #eee;
+    padding: 18px;
+    margin: 6px 0;
+    overflow: hidden;
+}
+.task i{
+    float: right;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.comp .task{
+ background: rgba(0,0,0, 0.4);
+ color: white;
+}
+.notcomp{
+    padding-bottom: 20px;
+} 
+/*END OF TO DO LIST*/
+
+
+
+/*CALCULATOR*/
+*, *::before, *::after{
+    box-sizing: border-box;
+    font-weight: normal;
+}
+#calculator{
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 20px;
+    background-image: url(imgProjects/Background23.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.calculator-grid{
+    padding-top: 50px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+}
+.calculator-grid >button{
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px solid white;
+    outline: none;
+    background-color: rgba(255,255,255,0.75);
+}
+.calculator-grid >button:hover{
+    background-color: rgba(255,255,255,0.9);
+}
+.span2{
+    grid-column: span 2;
+}
+.output{
+    grid-column: 1/-1;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+.output .previous-operand{
+    color: rgba(255,255,255,0.75);
+    font-size: 1.5rem;
+}
+.output .current-operand{
+    color: white;
+    font-size: 2.5rem;
+}
+/*END OF CALCULATOR*/
+
+
+
+
+
+
+
+/*MEDIA QUERIES*/
+@media screen and (max-width: 1100px){
+    .txtb{
+        width: 70%;
+    }
+    .task{
+        width:70%;
+        
+    }
+    h3{
+        left: 15%;
+        width: 70%;  
+    }
+    .task{
+        width: 65%;
+    }
+    nav{
+        width:80%; 
+    }
+}
+@media screen and (max-width: 768px){
+    .txtb{
+        width: 90%;
+    }
+    .task{
+        width:90%;
+        
+    }
+    h3{
+        width: 90%; 
+        left: 5%;  
+    }
+    .task{
+        width: 85%;
+    }
+    nav{
+        width: 95%; 
+    }
+}
+/*END OF MEDIA QUERIES*/
