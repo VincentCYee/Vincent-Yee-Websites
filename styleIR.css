@@ -230,6 +230,9 @@ header{
         @media screen and (max-width: 950px){
             .top-nav li a{
                 font-size: 20px;
+            }
+            .nav-list{
+                flex-direction: column;
             }  
         }
         @media screen and (max-width: 700px){
