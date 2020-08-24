@@ -65,7 +65,7 @@ ul li a{
     padding-bottom: 50px;
    
 }
-@media only screen and (orientation:landscape){
+@media only screen and (orientation:portrait){
     body {
       height: 100vw;
       transform: rotate(90deg);
