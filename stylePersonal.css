@@ -98,7 +98,6 @@ html,body{
     .left{
         min-height: 100vh;
     }
-    
     .right{
         position: absolute;
         left: 50%;
@@ -115,12 +114,6 @@ html,body{
         padding: 50px 0 0 0;
     }
     /*END OF SHARED CONTENT*/
-    @media only screen and (orientation:portrait){
-        body {
-          height: 100vw;
-          transform: rotate(-90deg);
-        }
-      }
     
 /* END OF OVERALL */
 
