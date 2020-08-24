@@ -89,7 +89,7 @@ img{
     background-color: rgba(0,0,0,0.4);
     margin: 0 auto;
     position: relative;
-    padding: 5rem;
+    padding: 4rem;
     list-style: none;
     text-align: left;
     width: 100%;
@@ -452,6 +452,14 @@ header{
         opacity: 0.6;
         padding: 0 0 40px 0;    
     }
+    @media screen and (max-width: 455px){
+        .experience .title,
+        .abilities .title,
+        .achievements .title,
+        .personalactivities .title{
+            font-size: 25px;
+        }
+    }
     /*END OF EDUCATION*/
 
     /*EDUCATION MEDIA QUERIES*/
@@ -672,30 +680,63 @@ header{
     align-items: center;
     text-align: center;
     justify-content: center;
+
 }
 .abilities .languages{
     padding-right: 50px;
 }
 .rowpl{
     position: relative;
-    padding: 10px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center; 
-    left: 50px;
+    width: 100%;
+}
+.paddingstar{
+    right: 0;
 }
 .pl{
+    width: 100%;
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+.pl h2{
+    padding-right: 20px;
+}
+.pltext{
     padding-right: 100px;
-}
-.programminglang span{
-    padding-bottom: 40px; 
-}
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    left: 10%;
+    position: relative;
 
+}
+.plsplit{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.plsplit2{
+    padding-left: 10%;
+    width: 100%;
+}
 .programminglang{
     position: relative;
-    
-    
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+#abilities h2{
+    font-size: 12px;
+}
+.skills span{
+    font-size: 8px;
 }
     @media screen and (max-width:650px){ 
         .pl{
@@ -709,6 +750,15 @@ header{
         }
         
     }
+    @media screen and (max-width:426px){ 
+        .skills span{
+            font-size: 6.5px;
+        }
+        #abilities h2{
+            font-size: 12px;
+        }
+    }
+
     /*END OF ABILITIES MEDIA QUERIES*/
 /*END OF ABILITIES*/
 
