@@ -62,16 +62,6 @@ html,body{
         opacity: 0.6;
         filter: brightness(0.8) grayscale(0);
     }
-    .splitercontacts{
-        background-image: url(imgPersonal/squad1.jpg);
-        position: relative;
-        min-height: 100vh;
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
-        opacity: 0.6;
-        filter: brightness(0.8) grayscale(0);
-    }
     #aboutme #wrapper {
         width: 100%;
         min-height: 210vh;
@@ -510,6 +500,18 @@ html,body{
         .top-nav li a{
             font-size: 16px;
         } 
+    }
+    @media screen and (max-width: 800px){
+        .spliterme{
+            background-attachment: scroll;
+            background-position: left;
+        }
+        .spliterphotography{
+            background-attachment: scroll;
+        }
+        .spliterguitar{
+            background-attachment: scroll;
+        }
     }
 /* END OF INTRO */
 
@@ -2128,7 +2130,7 @@ html,body{
 }
 @media screen and (max-width: 600px){
     #mywork #wrapper{
-        min-height: 780vh;
+        min-height: 820vh;
     }
 }
 @media screen and (max-width: 600px) and (max-height: 900px){
@@ -2158,7 +2160,7 @@ html,body{
 }
 @media screen and (max-width: 535px){
     #mywork #wrapper{
-        min-height: 730vh;
+        min-height: 760vh;
     }
 }
 @media screen and (max-width: 535px) and (max-height: 900px){
