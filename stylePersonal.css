@@ -678,9 +678,9 @@ html,body{
         fill: transparent;
     }
     .resumebutton a svg rect{
-        stroke: black;
+        stroke: rgb(173, 173, 173);
         stroke-width: 4;
-        transition: 1s;
+        transition: 1.5s;
         stroke-dasharray: 500, 500;
         stroke-dashoffset: 0;
     }
