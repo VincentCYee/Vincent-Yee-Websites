@@ -653,7 +653,6 @@ html,body{
     .resumebutton{
         position: relative;
         padding-top: 30px;
-        border: 8px;
     }
     .resumebutton a{
         position: relative;
