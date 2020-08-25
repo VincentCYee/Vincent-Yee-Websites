@@ -16,10 +16,7 @@ body{
     background: url("img/Background20.jpg") no-repeat center fixed;
     background-size: cover;
     animation: slide 32s infinite;
-    animation-delay: 3s;   
-}
-#slider{
-    height: 100vh;
+    animation-delay: 3s;
 }
 #welcomepage{
     height: 100vh;
