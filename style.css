@@ -165,15 +165,15 @@ img{
     }
 }
 @keyframes slide{
-    25%{
+    33.333333333%{
         background: url("img/Background24.jpg") no-repeat center fixed;
         background-size: cover;
     }
-    50%{
+    /*50%{
         background: url("img/Background10.jpg") no-repeat center fixed;
         background-size: cover;
-    }
-    75%{
+    }*/
+    66.666666666%{
         background: url("img/Background27.jpg") no-repeat center fixed;
         background-size: cover;
     }
