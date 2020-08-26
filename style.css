@@ -15,8 +15,7 @@ body{
     overflow-x: hidden;
     background: url("img/Background20.jpg") no-repeat center fixed;
     background-size: cover;
-    animation: slide 32s infinite;
-    animation-delay: 3s;
+    animation: slide 30s infinite;
 }
 #welcomepage{
     height: 100vh;
@@ -175,22 +174,19 @@ img{
     }
 }
 @keyframes slide{
-    33.333333333%{
-        background: url("img/Background24.jpg") no-repeat center fixed;
-        background-size: cover;
-    }
-    /*50%{
-        background: url("img/Background10.jpg") no-repeat center fixed;
-        background-size: cover;
-    }*/
-    66.666666666%{
-        background: url("img/Background27.jpg") no-repeat center fixed;
-        background-size: cover;
-    }
-    100%{
+    0%{
         background: url("img/Background20.jpg") no-repeat center fixed;
         background-size: cover;
     }
+    33%{
+        background: url("img/Background24.jpg") no-repeat center fixed;
+        background-size: cover;
+    }
+    67%{
+        background: url("img/Background27.jpg") no-repeat center fixed;
+        background-size: cover;
+    }
+    
 }
 @media screen and (max-width: 1300px){
     .project1,
