@@ -486,6 +486,16 @@ html,body{
             height: 12vh; 
         }
     }
+    @media screen and (max-height: 600px){
+        .top-nav li{
+            padding: 30px 0; 
+        }
+    }
+    @media screen and (max-height: 430px){
+        .top-nav li{
+            padding: 15px 0; 
+        }
+    }
     @media screen and (max-width: 500px){
         svg{
             width: 270px;
@@ -837,6 +847,16 @@ html,body{
             height: 150px;
         }
     }
+    @media screen and (max-width:768px) and (max-height: 520px){
+        .gridimage{
+            top: 40%;
+        } 
+    }
+    @media screen and (max-width:768px) and (max-height: 350px){
+        .gridimage{
+            top: 50%;
+        }  
+    }  
     @media screen and (max-width:730px){
         .gridimage{
             left: 22%;
@@ -1805,6 +1825,21 @@ html,body{
         min-height: 310vh;
     }
 }
+@media screen and (max-width: 1080px)and (max-height:750px){
+    #aboutme #wrapper{
+        min-height: 280vh;
+    }
+}
+@media screen and (max-width: 1080px)and (max-height:580px){
+    #aboutme #wrapper{
+        min-height: 350vh;
+    }
+}
+@media screen and (max-width: 1080px)and (max-height:450px){
+    #aboutme #wrapper{
+        min-height: 400vh;
+    }
+}
 @media screen and (max-width: 950px){
     #aboutme #wrapper{
         min-height: 280vh;
@@ -1815,7 +1850,36 @@ html,body{
         min-height: 380vh;
     }
 }
-
+@media screen and (max-width: 850px) and (max-height: 500px){
+    #aboutme #wrapper{
+        min-height: 500vh;
+    }
+}
+@media screen and (max-width: 850px) and (max-height: 360px){
+    #aboutme #wrapper{
+        min-height: 600vh;
+    }
+}
+@media screen and (max-width: 768px) and (max-height: 760px){
+    #aboutme #wrapper{
+        min-height: 350vh;
+    }
+}
+@media screen and (max-width: 768px) and (max-height: 550px){
+    #aboutme #wrapper{
+        min-height: 500vh;
+    }
+}
+@media screen and (max-width: 768px) and (max-height: 390px){
+    #aboutme #wrapper{
+        min-height: 600vh;
+    }
+}
+@media screen and (max-width: 768px) and (max-height: 315px){
+    #aboutme #wrapper{
+        min-height: 700vh;
+    }
+}
 @media screen and (max-width: 500px) and (max-height: 820px){
     #aboutme #wrapper{
         min-height: 340vh;
@@ -1916,6 +1980,36 @@ html,body{
         min-height: 1000vh;
     }
 }
+@media screen and (max-width: 1080px) and (max-height: 860px){
+    #mywork #wrapper{
+        min-height: 780vh;
+    }
+}
+@media screen and (max-width: 1080px) and (max-height: 790px){
+    #mywork #wrapper{
+        min-height: 850vh;
+    }
+}
+@media screen and (max-width: 1080px) and (max-height: 720px){
+    #mywork #wrapper{
+        min-height: 940vh;
+    }
+}
+@media screen and (max-width: 1080px) and (max-height: 650px){
+    #mywork #wrapper{
+        min-height: 1000vh;
+    }
+}
+@media screen and (max-width: 1080px) and (max-height: 610px){
+    #mywork #wrapper{
+        min-height: 1100vh;
+    }
+}
+@media screen and (max-width: 1080px) and (max-height: 555px){
+    #mywork #wrapper{
+        min-height: 1200vh;
+    }
+}
 @media screen and (max-width: 950px){
     #mywork #wrapper{
         min-height: 670vh;
@@ -1939,6 +2033,56 @@ html,body{
 @media screen and (max-width: 950px) and (max-height: 620px){
     #mywork #wrapper{
         min-height: 960vh;
+    }
+}
+@media screen and (max-width: 850px) and (max-height: 760px){
+    #mywork #wrapper{
+        min-height: 800vh;
+    }
+}
+@media screen and (max-width: 850px) and (max-height: 700px){
+    #mywork #wrapper{
+        min-height: 900vh;
+    }
+}
+@media screen and (max-width: 850px) and (max-height: 610px){
+    #mywork #wrapper{
+        min-height: 1000vh;
+    }
+}
+@media screen and (max-width: 850px) and (max-height: 540px){
+    #mywork #wrapper{
+        min-height: 1100vh;
+    }
+}
+@media screen and (max-width: 850px) and (max-height: 485px){
+    #mywork #wrapper{
+        min-height: 1200vh;
+    }
+}
+@media screen and (max-width: 850px) and (max-height: 440px){
+    #mywork #wrapper{
+        min-height: 1300vh;
+    }
+}
+@media screen and (max-width: 850px) and (max-height: 405px){
+    #mywork #wrapper{
+        min-height: 1400vh;
+    }
+}
+@media screen and (max-width: 850px) and (max-height: 372px){
+    #mywork #wrapper{
+        min-height: 1500vh;
+    }
+}
+@media screen and (max-width: 850px) and (max-height: 345px){
+    #mywork #wrapper{
+        min-height: 1650vh;
+    }
+}
+@media screen and (max-width: 850px) and (max-height: 312px){
+    #mywork #wrapper{
+        min-height: 1780vh;
     }
 }
 @media screen and (max-width: 830px){
@@ -2011,6 +2155,71 @@ html,body{
         min-height: 1400vh;
     }
 }
+@media screen and (max-width: 768px) and (max-height: 850px){
+    #mywork #wrapper{
+        min-height: 1100vh;
+    }
+}
+@media screen and (max-width: 768px) and (max-height: 790px){
+    #mywork #wrapper{
+        min-height: 1200vh;
+    }
+}
+@media screen and (max-width: 768px) and (max-height: 720px){
+    #mywork #wrapper{
+        min-height: 1300vh;
+    }
+}
+@media screen and (max-width: 768px) and (max-height: 660px){
+    #mywork #wrapper{
+        min-height: 1400vh;
+    }
+}
+@media screen and (max-width: 768px) and (max-height: 610px){
+    #mywork #wrapper{
+        min-height: 1500vh;
+    }
+}
+@media screen and (max-width: 768px) and (max-height: 565px){
+    #mywork #wrapper{
+        min-height: 1600vh;
+    }
+}
+@media screen and (max-width: 768px) and (max-height: 525px){
+    #mywork #wrapper{
+        min-height: 1700vh;
+    }
+}
+@media screen and (max-width: 768px) and (max-height: 500px){
+    #mywork #wrapper{
+        min-height: 1800vh;
+    }
+}
+@media screen and (max-width: 768px) and (max-height: 465px){
+    #mywork #wrapper{
+        min-height: 1900vh;
+    }
+}
+@media screen and (max-width: 768px) and (max-height: 440px){
+    #mywork #wrapper{
+        min-height: 2080vh;
+    }
+}
+@media screen and (max-width: 768px) and (max-height: 400px){
+    #mywork #wrapper{
+        min-height: 2300vh;
+    }
+}
+@media screen and (max-width: 768px) and (max-height: 360px){
+    #mywork #wrapper{
+        min-height: 2450vh;
+    }
+}
+@media screen and (max-width: 768px) and (max-height: 335px){
+    #mywork #wrapper{
+        min-height: 2600vh;
+    }
+}
 @media screen and (max-width: 735px){
     #mywork #wrapper{
         min-height: 910vh;
@@ -2044,6 +2253,56 @@ html,body{
 @media screen and (max-width: 735px) and (max-height: 605px){
     #mywork #wrapper{
         min-height: 1350vh;
+    }
+}
+@media screen and (max-width: 700px) and (max-height: 615px){
+    #mywork #wrapper{
+        min-height: 1450vh;
+    }
+}
+@media screen and (max-width: 700px) and (max-height: 545px){
+    #mywork #wrapper{
+        min-height: 1550vh;
+    }
+}
+@media screen and (max-width: 700px) and (max-height: 525px){
+    #mywork #wrapper{
+        min-height: 1700vh;
+    }
+}
+@media screen and (max-width: 700px) and (max-height: 470px){
+    #mywork #wrapper{
+        min-height: 1800vh;
+    }
+}
+@media screen and (max-width: 700px) and (max-height: 445px){
+    #mywork #wrapper{
+        min-height: 1950vh;
+    }
+}
+@media screen and (max-width: 700px) and (max-height: 405px){
+    #mywork #wrapper{
+        min-height: 2100vh;
+    }
+}
+@media screen and (max-width: 700px) and (max-height: 375px){
+    #mywork #wrapper{
+        min-height: 2250vh;
+    }
+}
+@media screen and (max-width: 700px) and (max-height: 350px){
+    #mywork #wrapper{
+        min-height: 2400vh;
+    }
+}
+@media screen and (max-width: 700px) and (max-height: 330px){
+    #mywork #wrapper{
+        min-height: 2550vh;
+    }
+}
+@media screen and (max-width: 700px) and (max-height: 320px){
+    #mywork #wrapper{
+        min-height: 2650vh;
     }
 }
 @media screen and (max-width: 675px){
@@ -2345,7 +2604,17 @@ html,body{
     .left{
         min-height: 100vh;
     }   
-}    
+}
+@media screen and (max-width:768px) and (max-height: 520px){
+    .left{
+        min-height: 140vh;
+    }   
+}
+@media screen and (max-width:768px) and (max-height: 350px){
+    .left{
+        min-height: 160vh;
+    }   
+}     
 /*END OF SHARED CONTENT*/
 
 /* KEYFRAMES */
