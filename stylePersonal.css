@@ -78,7 +78,7 @@ html,body{
     }
     #contact #wrapper{
         width: 100%;
-        min-height: 190vh;
+        height: 130vh;
         margin-top: 0;
         position: relative;
         background-color: white;
@@ -103,6 +103,9 @@ html,body{
         left: 50%;
         min-height: auto;
         top: 0;
+    }
+    #contact .right{
+        width: 50%;
     }
     .quote{
         position: relative;
@@ -456,6 +459,15 @@ html,body{
             width: 570px;
         }
     }
+    @media screen and (max-width: 1150px) and (max-height: 510px){
+        .navbar{
+            height: 12vh;
+        }
+        .nav-logo{
+            width: 50px;
+            left: 7%;
+        }
+    }
     @media screen and (max-width: 950px){
         .top-nav li a{
             font-size: 20px;
@@ -495,6 +507,23 @@ html,body{
         .top-nav li{
             padding: 15px 0; 
         }
+    }
+    @media screen and (max-width: 1150px) and (max-height: 800px){
+        svg{
+            width: 470px;
+        }
+        .intro .button a{   
+            margin: 15px;
+        }
+        .HelloIm h1{
+            font-size: 25px;
+        }
+        .top-nav li a{
+            font-size: 16px;
+        }
+        .menu-toggler{
+            right: 2rem;  
+        }  
     }
     @media screen and (max-width: 500px){
         svg{
@@ -660,15 +689,6 @@ html,body{
         font-weight: 900;
         text-align: center; 
     }
-    .imagebottom{
-        position: relative;
-        left: 100%;
-        transform: translateX(-100%);
-    }
-    .imagebottom img{
-        padding-top: 40px;
-        width: 80%; 
-    } 
     /*END OF ABOUT ME TEXT*/
 
     /* RESUME BUTTON */
@@ -700,7 +720,7 @@ html,body{
         fill: transparent;
     }
     .resumebutton a svg rect{
-        stroke: rgb(173, 173, 173);
+        stroke: rgb(219, 198, 198);
         stroke-width: 4;
         transition: 1.5s;
         stroke-dasharray: 500, 500;
@@ -1639,21 +1659,26 @@ html,body{
 .info{
     position: relative;
     width: 100%;
-    padding-top: 100px;  
+    padding-top: 100px;
 }
 .info .firsttext{
     position: relative;
     text-align: center; 
     font-size: 20px;
-    color: black; 
-    padding: 20px 0 50px 0;
+    color: black;
+    width: 100%;
 }
 .info .secondtext {
     position: relative;
     text-align: center;
     font-size: 40px;
     color: black;
-    left: 50%;
+}
+.info .thirdtext{
+    position: relative;
+    text-align: center;
+    font-size: 20px;
+    color: black;
 }
 .info .secondandthirdtext{
     position: relative;
@@ -1665,6 +1690,14 @@ html,body{
 .info .cellandemail{
     padding: 30px 0 0 0;
 }
+.imagebottom{
+    position: absolute;
+    width: 100%;
+    left: 10%;
+}
+.imagebottom img{
+    width: 80%; 
+} 
     /* Contact Buttons */
     .info .button{
         position: relative;
@@ -1685,84 +1718,8 @@ html,body{
     .info .btn:hover{
         transform: scale(1.5);
     }
-    /* End of Contact Buttons */
 
-    /* Fill Out Form */
-    .filloutform{
-        position: relative;
-        min-height: 55vh;
-        width: 100%;
-        top: 30%;
-        padding-top: 50px;
-        padding-bottom: 100px;
-        text-align: center;
-    }
-    .filloutform h1{
-        font-size: 25px;
-        color: black;
-        margin-bottom: 10px;
-        text-transform: uppercase;
-        letter-spacing: 4px;
-        font-weight: 400;
-    }
-    .filloutform h2{
-        position: relative;
-        font-size: 14px;
-        color: black;
-        width: 80%;
-        left: 50%;
-        transform: translateX(-50%);
-        margin-bottom: 60px;
-        letter-spacing: 2px;
-        font-weight: 400;
-    }
-    .inner-width{
-        max-width: 600px;
-        margin: auto;
-        padding: 0 20px;
-    }
-    .name, .email, .subject, .message{
-        background: none;
-        border: none;
-        outline: none;
-        border-bottom: 1px solid;
-        color: #888;
-        padding: 10px 6px; 
-        font-size: 14px;
-        margin-bottom: 40px;
-    }
-    .name, .email{
-        width: 40%;
-    }
-    .subject{
-        width: 80%;
-    }
-    .message{
-        padding: 10px 0 50px 5px;
-        min-width: 80%;
-        height: 20%;
-    }
-    .filloutform button{
-        background: none;
-        color: #e6ccb3;
-        border: 1px solid #e6ccb3;
-        padding: 12px 40px;
-        border-radius: 8px;
-        text-transform: uppercase;
-        font-size: 14px;
-        transition: 0.4s linear;
-        cursor: pointer;
-    }
-    .filloutform button:hover{
-        background-color: #e6ccb3;
-        color: white;
-    }
-    /* End of Fill Out Form */
-    @media screen and (min-width: 1921px){
-        .filloutform h2{
-            font-size: 16px;
-        }
-    }
+    /* End of Contact Buttons */
     @media screen and (max-width: 1400px){
         .name, .email{
             width: 80%;
@@ -1772,41 +1729,28 @@ html,body{
         .info{
             top: 12%;
         }
-        .filloutform{
-            top: 35%;
-        }
     }
     @media screen and (max-width: 1200px){
         .info{
             top: 10%;
         }
-        .filloutform{
-            top: 40%;
-        }
     }
     @media screen and (max-width: 950px){
+        #contact .right{
+            width: 100%;
+        }
         .info{
             position: relative;
             right:0;
             left: 0; 
         }
-        .filloutform{
-            position: relative;
-            left:0;
-            top: 35%;
+        .imagebottom{
+            left: 0;
         }
     }
     @media screen and (max-width: 800px){
         .info{
             top: 15%;
-        }
-    }
-    @media screen and (max-width: 400px){
-        .filloutform h1{
-            font-size: 20px;
-        }
-        .filloutform h2{
-            font-size: 12px;
         }
     }
     @media screen and (max-width: 850px){
@@ -1815,6 +1759,19 @@ html,body{
         }
         .info a{
             left: -2%;
+        }
+    }
+    @media screen and (max-width: 850px){
+        .info .thirdtext{
+            position: relative;
+            text-align: center;
+            font-size: 15px;
+            color: black;
+        }
+    }
+    @media screen and (max-width: 675px){
+        .info .btn{
+            margin:150px 0px 0px 0px;
         }
     }
     @media screen and (max-width: 500px){
@@ -1830,6 +1787,11 @@ html,body{
             margin:150px 0px 0px 0px;
         }
     }
+    @media screen and (max-width: 950px){
+        .imagebottom img{
+            width: 100%; 
+        }
+    } 
     
 /* END OF CONTACT SECTION */
 
@@ -1888,6 +1850,26 @@ html,body{
 @media screen and (max-width: 1921px)and (max-height:705px){
     #aboutme #wrapper{
         min-height: 310vh;
+    }
+}
+@media screen and (max-width: 1150px) and (max-height: 500px){
+    #aboutme #wrapper{
+        min-height: 350vh;
+    }
+}
+@media screen and (max-width: 1150px) and (max-height: 440px){
+    #aboutme #wrapper{
+        min-height: 420vh;
+    }
+}
+@media screen and (max-width: 1150px) and (max-height: 370px){
+    #aboutme #wrapper{
+        min-height: 500vh;
+    }
+}
+@media screen and (max-width: 1150px) and (max-height: 310px){
+    #aboutme #wrapper{
+        min-height: 600vh;
     }
 }
 @media screen and (max-width: 1100px) and (max-height: 750px){
@@ -2075,6 +2057,21 @@ html,body{
         min-height: 480vh;
     }
 }
+@media screen and (max-width: 1150px) and (max-height: 575px){
+    #mywork #wrapper{
+        min-height: 550vh;
+    }
+}
+@media screen and (max-width: 1150px) and (max-height: 505px){
+    #mywork #wrapper{
+        min-height: 620vh;
+    }
+}
+@media screen and (max-width: 1150px) and (max-height: 445px){
+    #mywork #wrapper{
+        min-height: 700vh;
+    }
+}
 @media screen and (max-width: 1100px){
     #mywork #wrapper{
         min-height: 720vh;
@@ -2235,6 +2232,41 @@ html,body{
         min-height: 1200vh;
     }
 }
+@media screen and (max-width: 1080px) and (max-height: 530px){
+    #mywork #wrapper{
+        min-height: 1300vh;
+    }
+}
+@media screen and (max-width: 1080px) and (max-height: 500px){
+    #mywork #wrapper{
+        min-height: 1450vh;
+    }
+}
+@media screen and (max-width: 1080px) and (max-height: 440px){
+    #mywork #wrapper{
+        min-height: 1600vh;
+    }
+}
+@media screen and (max-width: 1080px) and (max-height: 400px){
+    #mywork #wrapper{
+        min-height: 1700vh;
+    }
+}
+@media screen and (max-width: 1080px) and (max-height: 375px){
+    #mywork #wrapper{
+        min-height: 1850vh;
+    }
+}
+@media screen and (max-width: 1080px) and (max-height: 345px){
+    #mywork #wrapper{
+        min-height: 2000vh;
+    }
+}
+@media screen and (max-width: 1080px) and (max-height: 320px){
+    #mywork #wrapper{
+        min-height: 2100vh;
+    }
+}
 @media screen and (max-width: 950px){
     #mywork #wrapper{
         min-height: 670vh;
@@ -2370,29 +2402,39 @@ html,body{
         min-height: 600vh;
     } 
 }
-@media screen and (max-width: 830px) and (max-height: 900px){
+@media screen and (max-width: 830px) and (max-height: 930px){
     #mywork #wrapper{
-        min-height: 670vh;
+        min-height: 700vh;
     }
 }
-@media screen and (max-width: 830px) and (max-height: 870px){
+@media screen and (max-width: 830px) and (max-height: 835px){
     #mywork #wrapper{
-        min-height: 650vh;
+        min-height: 730vh;
     }
 }
 @media screen and (max-width: 830px) and (max-height: 800px){
     #mywork #wrapper{
-        min-height: 720vh;
+        min-height: 760vh;
     }
 }
-@media screen and (max-width: 830px) and (max-height: 710px){
+@media screen and (max-width: 830px) and (max-height: 760px){
     #mywork #wrapper{
         min-height: 800vh;
     }
 }
-@media screen and (max-width: 830px) and (max-height: 640px){
+@media screen and (max-width: 830px) and (max-height: 715px){
     #mywork #wrapper{
         min-height: 880vh;
+    }
+}
+@media screen and (max-width: 830px) and (max-height: 675px){
+    #mywork #wrapper{
+        min-height: 920vh;
+    }
+}
+@media screen and (max-width: 830px) and (max-height: 640px){
+    #mywork #wrapper{
+        min-height: 960vh;
     }
 }
 @media screen and (max-width: 800px){
@@ -2510,9 +2552,24 @@ html,body{
         min-height: 910vh;
     }
 }
-@media screen and (max-width: 735px) and (max-height: 900px){
+@media screen and (max-width: 735px) and (max-height: 980px){
+    #mywork #wrapper{
+        min-height: 950vh;
+    }
+}
+@media screen and (max-width: 735px) and (max-height: 940px){
+    #mywork #wrapper{
+        min-height: 980vh;
+    }
+}
+@media screen and (max-width: 735px) and (max-height: 910px){
     #mywork #wrapper{
         min-height: 1000vh;
+    }
+}
+@media screen and (max-width: 735px) and (max-height: 890px){
+    #mywork #wrapper{
+        min-height: 1040vh;
     }
 }
 @media screen and (max-width: 735px) and (max-height: 805px){
@@ -2860,36 +2917,17 @@ html,body{
         min-height: 900vh;
     }
 }
+@media screen and (max-width: 1200px){
+    #contact #wrapper{
+        min-height: 100vh;
+    }
+}
 @media screen and (max-width: 950px){
     #contact #wrapper{
-        min-height: 250vh;
-    }  
-}
-@media screen and (max-width: 560px){
-    #contact #wrapper{
-        min-height: 235vh;
+        min-height: 200vh;
     }
 }
-@media screen and (max-height: 900px){
-    #contact #wrapper{
-        min-height: 240vh;
-    }
-}
-@media screen and (max-height: 715px){
-    #contact #wrapper{
-        min-height: 270vh;
-    }
-}
-@media screen and (max-height: 630px){
-    #contact #wrapper{
-        min-height: 300vh;
-    }
-}
-@media screen and (max-height: 575px){
-    #contact #wrapper{
-        min-height: 330vh;
-    }
-}
+
 @media screen and (max-width: 950px){
     #sticky {
         width: auto;
@@ -2910,6 +2948,16 @@ html,body{
     .quote{
         font-size: 20px;
     } 
+}
+@media screen and (max-width: 1150px) and (max-height: 575px){
+    .leftline{
+        display: none;
+    }
+}
+@media screen and (max-width: 950px){
+    .leftline{
+        display: initial;
+    }
 }
 @media screen and (max-width: 1100px){
     .left-title{
@@ -2948,13 +2996,6 @@ html,body{
         text-align: center;
         height: 71vh;
         padding-top: 20px;
-    }
-    .imagebottom{
-        position: relative;
-        bottom: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 70%;
     }
     .left{
         min-height: 100vh;
