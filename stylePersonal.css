@@ -510,7 +510,7 @@ html,body{
             font-size: 16px;
         } 
     }
-    @media screen and (max-width: 900px){
+    @media screen and (max-width: 1000px){
         .spliterme{
             background-attachment: scroll;
             background-position: left;
@@ -1521,6 +1521,34 @@ html,body{
         }
         #playlist li a{
             font-size: 18px;  
+        }
+    }
+    @media screen and (max-width: 1050px){
+        .photography p{
+            width: 80%; 
+        }
+        .guitar p{
+            width: 80%;  
+        }
+    }
+    @media screen and (max-width: 1000px){
+        .photography .firsttext,
+        .guitar .firsttext{
+            left: 45%;
+        }
+        .photography p,
+        .guitar p{
+            left: 45%;
+        }
+    }
+    @media screen and (max-width: 950px){
+        .photography .firsttext,
+        .guitar .firsttext{
+            left: 50%;
+        }
+        .photography p,
+        .guitar p{
+            left: 50%;
         }
     }
     @media screen and (max-width: 500px){
