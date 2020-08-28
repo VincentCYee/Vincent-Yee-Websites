@@ -522,6 +522,18 @@ html,body{
             background-attachment: scroll;
         }
     }
+    @media screen and (max-width: 800px){
+        .spliterme{
+            background-attachment: scroll;
+            background-position: left;
+        }
+        .spliterphotography{
+            background-attachment: scroll;
+        }
+        .spliterguitar{
+            background-attachment: scroll;
+        }
+    }
 /* END OF INTRO */
 
 
