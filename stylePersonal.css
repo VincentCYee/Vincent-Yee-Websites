@@ -3046,6 +3046,21 @@ html,body{
         min-height: 250vh;
     }
 }
+@media screen and (max-width: 850px) and (max-height: 450px){
+    #contact #wrapper{
+        min-height: 430vh;
+    }
+}
+@media screen and (max-width: 850px) and (max-height: 385px){
+    #contact #wrapper{
+        min-height: 460vh;
+    }
+}
+@media screen and (max-width: 850px) and (max-height: 360px){
+    #contact #wrapper{
+        min-height: 520vh;
+    }
+}
 @media screen and (max-width: 800px){
     #contact #wrapper{
         min-height: 230vh;
