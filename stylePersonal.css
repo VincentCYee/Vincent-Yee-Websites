@@ -78,7 +78,7 @@ html,body{
     }
     #contact #wrapper{
         width: 100%;
-        height: 130vh;
+        height: 120vh;
         margin-top: 0;
         position: relative;
         background-color: white;
@@ -1693,7 +1693,6 @@ html,body{
 .imagebottom{
     position: absolute;
     width: 100%;
-    left: 10%;
 }
 .imagebottom img{
     width: 80%; 
@@ -2682,9 +2681,29 @@ html,body{
         min-height: 1350vh;
     }
 }
-@media screen and (max-width: 700px) and (max-height: 615px){
+@media screen and (max-width: 700px) and (max-height: 830px){
+    #mywork #wrapper{
+        min-height: 1150vh;
+    }
+}
+@media screen and (max-width: 700px) and (max-height: 740px){
+    #mywork #wrapper{
+        min-height: 1250vh;
+    }
+}
+@media screen and (max-width: 700px) and (max-height: 700px){
+    #mywork #wrapper{
+        min-height: 1350vh;
+    }
+}
+@media screen and (max-width: 700px) and (max-height: 645px){
     #mywork #wrapper{
         min-height: 1450vh;
+    }
+}
+@media screen and (max-width: 700px) and (max-height: 590px){
+    #mywork #wrapper{
+        min-height: 1500vh;
     }
 }
 @media screen and (max-width: 700px) and (max-height: 545px){
@@ -3014,6 +3033,11 @@ html,body{
 }
 @media screen and (max-width: 1200px){
     #contact #wrapper{
+        min-height: 110vh;
+    }
+}
+@media screen and (max-width: 1050px){
+    #contact #wrapper{
         min-height: 100vh;
     }
 }
@@ -3022,7 +3046,26 @@ html,body{
         min-height: 250vh;
     }
 }
-
+@media screen and (max-width: 800px){
+    #contact #wrapper{
+        min-height: 230vh;
+    }
+}
+@media screen and (max-width: 700px){
+    #contact #wrapper{
+        min-height: 220vh;
+    }
+}
+@media screen and (max-width: 500px){
+    #contact #wrapper{
+        min-height: 200vh;
+    }
+}
+@media screen and (max-width: 400px){
+    #contact #wrapper{
+        min-height: 190vh;
+    }
+}
 @media screen and (max-width: 950px){
     #sticky {
         width: auto;
