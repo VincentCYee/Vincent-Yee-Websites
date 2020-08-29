@@ -94,9 +94,6 @@ img{
     text-align: left;
     width: 100%;
 }
-.education .background{
-    left: 1%;
-}
     /*SHARED MEDIA QUERIES*/
     @media screen and (max-width:950px){
         .section-heading h1{
