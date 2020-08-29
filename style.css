@@ -148,19 +148,6 @@ img{
     font-size: 0.7rem;
     margin: auto; 
 }
-.copyright2{
-    width: 100%;
-    text-align: center;
-    background-color: #0c1a27;
-    padding: 2rem 0;
-    position: relative;
-    color: white;
-    height: 30px;
-    bottom: 0;
-}
-.copyright2 p{
-    font-size: 0.8rem;
-}
 @keyframes pulse{
     0%{
         box-shadow: 0 0 0 0 white;
