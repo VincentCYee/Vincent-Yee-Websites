@@ -36,8 +36,7 @@ nav{
     min-height: 10vh;
     width: 70%;
     left: 50%;
-    transform: translateX(-50%);
-    border-bottom: 2px solid white;   
+    transform: translateX(-50%); 
 }
 ul{
     position: absolute;
