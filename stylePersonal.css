@@ -1971,6 +1971,16 @@ html,body{
         min-height: 400vh;
     }
 }
+@media screen and (max-width: 425px) and (max-height: 720px){
+    #aboutme #wrapper{
+        min-height: 400vh;
+    }
+}
+@media screen and (max-width: 425px) and (max-height: 550px){
+    #aboutme #wrapper{
+        min-height: 500vh;
+    }
+}
 @media screen and (max-width: 400px) and (max-height: 705px){
     #aboutme #wrapper{
         min-height: 400vh;
@@ -2531,9 +2541,19 @@ html,body{
         min-height: 1100vh;
     }
 }
+@media screen and (max-width: 768px) and (max-height: 850px){
+    #mywork #wrapper{
+        min-height: 1100vh;
+    }
+}
 @media screen and (max-width: 768px) and (max-height: 790px){
     #mywork #wrapper{
         min-height: 1200vh;
+    }
+}
+@media screen and (max-width: 768px) and (max-height: 750px){
+    #mywork #wrapper{
+        min-height: 1250vh;
     }
 }
 @media screen and (max-width: 768px) and (max-height: 720px){
