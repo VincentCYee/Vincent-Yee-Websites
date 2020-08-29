@@ -3046,6 +3046,21 @@ html,body{
         min-height: 250vh;
     }
 }
+@media screen and (max-width: 1080px) and (max-height: 630px){
+    #contact #wrapper{
+        min-height: 160vh;
+    }
+}
+@media screen and (max-width: 1080px) and (max-height: 485px){
+    #contact #wrapper{
+        min-height: 200vh;
+    }
+}
+@media screen and (max-width: 1080px) and (max-height: 380px){
+    #contact #wrapper{
+        min-height: 260vh;
+    }
+}
 @media screen and (max-width: 850px) and (max-height: 450px){
     #contact #wrapper{
         min-height: 430vh;
@@ -3054,6 +3069,11 @@ html,body{
 @media screen and (max-width: 850px) and (max-height: 385px){
     #contact #wrapper{
         min-height: 460vh;
+    }
+}
+@media screen and (max-width: 850px) and (max-height: 360px){
+    #contact #wrapper{
+        min-height: 520vh;
     }
 }
 @media screen and (max-width: 850px) and (max-height: 360px){
