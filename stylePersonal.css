@@ -884,6 +884,11 @@ html,body{
             top: 45%;
         } 
     }
+    @media screen and (max-width: 800px) and (max-height: 1300px){
+        .gridimage{
+            top: 15%;
+        } 
+    }
     @media screen and (max-width:768px) and (max-height: 520px){
         .gridimage{
             top: 40%;
@@ -1931,6 +1936,11 @@ html,body{
         min-height: 680vh;
     }
 }
+@media screen and (max-width: 800px) and (max-height: 1300px){
+    #aboutme #wrapper{
+        min-height: 260vh;
+    }
+}
 @media screen and (max-width: 768px) and (max-height: 760px){
     #aboutme #wrapper{
         min-height: 350vh;
@@ -2241,6 +2251,36 @@ html,body{
         min-height: 2100vh;
     }
 }
+@media screen and (max-width: 1030px) and (max-height: 800px){
+    #mywork #wrapper{
+        min-height: 880vh;
+    }
+}
+@media screen and (max-width: 1030px) and (max-height: 725px){
+    #mywork #wrapper{
+        min-height: 1000vh;
+    }
+}
+@media screen and (max-width: 1030px) and (max-height: 635px){
+    #mywork #wrapper{
+        min-height: 1100vh;
+    }
+}
+@media screen and (max-width: 1030px) and (max-height: 575px){
+    #mywork #wrapper{
+        min-height: 1200vh;
+    }
+}
+@media screen and (max-width: 1030px) and (max-height: 530px){
+    #mywork #wrapper{
+        min-height: 1300vh;
+    }
+}
+@media screen and (max-width: 1030px) and (max-height: 490px){
+    #mywork #wrapper{
+        min-height: 1400vh;
+    }
+}
 @media screen and (max-width: 950px){
     #mywork #wrapper{
         min-height: 670vh;
@@ -2449,6 +2489,11 @@ html,body{
 @media screen and (max-width: 800px){
     #mywork #wrapper{
         min-height: 960vh;
+    }
+}
+@media screen and (max-width: 800px) and (max-height: 1300px){
+    #mywork #wrapper{
+        min-height: 810vh;
     }
 }
 @media screen and (max-width: 800px) and (max-height: 900px){
@@ -2986,14 +3031,49 @@ html,body{
         min-height: 820vh;
     }
 }
-@media screen and (max-width: 400px) and (max-height: 685px){
+@media screen and (max-width: 400px) and (max-height: 720px){
+    #mywork #wrapper{
+        min-height: 860vh;
+    }
+}
+@media screen and (max-width: 400px) and (max-height: 715px){
     #mywork #wrapper{
         min-height: 900vh;
     }
 }
-@media screen and (max-width: 400px) and (max-height: 615px){
+@media screen and (max-width: 400px) and (max-height: 685px){
+    #mywork #wrapper{
+        min-height: 935vh;
+    }
+}
+@media screen and (max-width: 400px) and (max-height: 660px){
+    #mywork #wrapper{
+        min-height: 950vh;
+    }
+}
+@media screen and (max-width: 400px) and (max-height: 640px){
+    #mywork #wrapper{
+        min-height: 965vh;
+    }
+}
+@media screen and (max-width: 400px) and (max-height: 630px){
     #mywork #wrapper{
         min-height: 980vh;
+    }
+}
+@media screen and (max-width: 400px) and (max-height: 615px){
+    #mywork #wrapper{
+        min-height: 1030vh;
+    }
+}
+@media screen and (max-width: 385px) and (max-height: 660px){
+    #mywork #wrapper{
+        min-height: 980vh;
+    }
+}
+@media screen and (max-width: 385px) and (max-height: 600px){
+    #mywork #wrapper{
+        min-height: 1020vh;
     }
 }
 @media screen and (max-width: 350px) and (max-height: 850px){
@@ -3008,14 +3088,15 @@ html,body{
 }
 @media screen and (max-width: 350px) and (max-height: 680px){
     #mywork #wrapper{
-        min-height: 850vh;
+        min-height: 950vh;
     }
 }
-@media screen and (max-width: 350px) and (max-height: 610px){
+@media screen and (max-width: 350px) and (max-height: 590px){
     #mywork #wrapper{
-        min-height: 900vh;
+        min-height: 1020vh;
     }
 }
+
 @media screen and (max-width: 950px){
     #sticky {
         width: auto;
