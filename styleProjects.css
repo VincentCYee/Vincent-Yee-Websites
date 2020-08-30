@@ -236,4 +236,15 @@ h3{
         width: 95%; 
     }
 }
+@media screen and (max-width: 500px){
+    h1, h2{
+        font-size: 30px;
+    }
+    h2{
+        font-size: 20px;
+    }
+    h3{
+        font-size: 15px;
+    }
+}
 /*END OF MEDIA QUERIES*/
