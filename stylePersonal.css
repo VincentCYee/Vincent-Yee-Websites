@@ -2021,6 +2021,16 @@ html,body{
         min-height: 440vh;
     }
 }
+@media screen and (max-width: 350px) and (max-height: 560px){
+    #aboutme #wrapper{
+        min-height: 500vh;
+    }
+}
+@media screen and (max-width: 350px) and (max-height: 500px){
+    #aboutme #wrapper{
+        min-height: 530vh;
+    }
+}
 @media screen and (max-width: 1921px) and (max-height: 840px){
     #mywork #wrapper{
         min-height: 350vh;
