@@ -745,6 +745,11 @@ header{
                 left: -14.5rem;
             }
         }
+        @media screen and (max-width: 340px){
+            .work .date::before{
+                left: -13.8rem;
+            }
+        }
         /*END OF WORK AND VOLUNTEER MEDIA QUERIES*/
 
     /*END OF WORK AND COMUNNITY INVOLVEMENT*/
