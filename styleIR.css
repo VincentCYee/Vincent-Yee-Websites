@@ -118,6 +118,14 @@ img{
             font-size: 45px;
         }
     }
+    @media screen and (max-width:335px){
+        .section-heading h1{
+            font-size: 35px;
+        }
+        .section-heading h6{
+            font-size: 15px;
+        }
+    }
     /*END OF SHARED MEDIA QUERIES*/
 
 
