@@ -1796,11 +1796,17 @@ html,body{
     margin: auto;
 }
 .copyright p{
-    font-size: 1rem;
+    font-size: 0.8rem;
+}
+@media screen and (max-width: 1024px) and (max-height: 700px){
+    .copyright{
+        height: 13vh;
+    }
 }
 @media screen and (max-width: 550px){
     .copyright p{
         font-size: 0.7rem;
+        height: 15vh;
     }
     .up{
         width: 3rem;
