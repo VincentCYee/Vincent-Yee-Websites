@@ -384,11 +384,11 @@ header{
 .fa-facebook-square:hover{
     color: #4267b2;
 }
-.fa-twitter-square:hover{
-    color: #1da1f2;
-}
 .fa-instagram:hover{
     color: #c32aa3;
+}
+.fa-github-square:hover{
+    color: #211F1F;
 }
 .fa-linkedin-square:hover{
     color:  #007bb5;
