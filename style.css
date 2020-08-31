@@ -6,13 +6,6 @@
 }
 html{
     scroll-behavior: smooth;
-}
-body{
-    margin: 0;
-    padding: 0;
-    width: auto;
-    height: auto;
-    overflow-x: hidden;
     background: url("img/Background20.jpg");
     background-size: cover;
     background-attachment: fixed;
@@ -22,6 +15,13 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     animation: slide 30s infinite;
+}
+body{
+    margin: 0;
+    padding: 0;
+    width: auto;
+    height: auto;
+    overflow-x: hidden;
 }
 #welcomepage{
     height: 100vh;
