@@ -13,8 +13,13 @@ body{
     width: auto;
     height: auto;
     overflow-x: hidden;
-    background: url("img/Background20.jpg") no-repeat center fixed;
+    background: url("img/Background20.jpg");
     background-size: cover;
+    background-attachment: fixed;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-repeat: no-repeat;
     animation: slide 30s infinite;
 }
 #welcomepage{
