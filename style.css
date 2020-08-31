@@ -20,6 +20,7 @@ body{
     -moz-background-size: cover;
     -webkit-background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     animation: slide 30s infinite;
 }
 #welcomepage{
@@ -53,7 +54,9 @@ li{
 #projects{
     min-height: 100vh;
     position: relative;
-    width: 100%;  
+    width: 70%;
+    left: 50%;
+    transform: translateX(-50%);
 }   
 .project1,
 .project2,
@@ -61,12 +64,12 @@ li{
     transition: 1s ease-in-out;
     position: relative;
     height: 50%;
-    width: 50%;
+    width: 100%;
     justify-content: center;
     align-items: center;
-    left: 50%;
-    transform: translateX(-50%);
-    margin: 20px 0;    
+    display: block;
+    margin: 10px 0;
+    
 }    
 img{
     width: 100%;
@@ -167,25 +170,41 @@ img{
 }
 @keyframes slide{
     0%{
-        background: url("img/Background20.jpg") no-repeat center fixed;
+        background: url("img/Background20.jpg");
         background-size: cover;
+        background-attachment: fixed;
+        -o-background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
     }
     33%{
-        background: url("img/Background24.jpg") no-repeat center fixed;
+        background: url("img/Background24.jpg");
         background-size: cover;
+        background-attachment: fixed;
+        -o-background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+        background-repeat: no-repeat;
     }
     67%{
-        background: url("img/Background27.jpg") no-repeat center fixed;
+        background: url("img/Background27.jpg");
         background-size: cover;
+        background-attachment: fixed;
+        -o-background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
     }
-    
+}
+@media screen and (min-width: 2560px){
+    #projects{
+        left: 53%;
+    }
 }
 @media screen and (max-width: 1300px){
-    .project1,
-    .project2,
-    .project3{    
-        width: 70%;          
-    }
     .project1 .content1,
     .project2 .content1,
     .project3 .content1{
@@ -212,10 +231,8 @@ img{
     #welcomepage h1{
         font-size: 20px;
     }
-    .project1,
-    .project2,
-    .project3{    
-        width: 95%;          
+    #projects{
+        width: 95%;
     }
     .project1 .content1,
     .project2 .content1,
@@ -243,11 +260,4 @@ img{
         font-size: 12px;
     }
 }
-@media screen and (min-width: 2560px){
-    .project1,
-    .project2,
-    .project3{
-        width: 80%;
-        left: 68%;
-    }
-}
+
