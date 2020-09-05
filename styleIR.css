@@ -1170,9 +1170,15 @@ header{
         display: flex;
         flex-direction: column;   
     }
+    .interest4{
+        width: 40%;
+    }
+    .interest5{
+        width: 34%;
+    }
     .interest4,
     .interest5{
-        width: 40%;
+        left: -2%;
     }
     .classone,
     .classtwo{
