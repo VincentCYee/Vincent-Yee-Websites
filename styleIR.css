@@ -785,13 +785,14 @@ header {
 }
 .programminglang {
   position: relative;
-  width: 100%;
+  width: 50%;
   display: flex;
   flex-direction: row;
 }
 .abilities .alllanguages {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  width: 50%;
 }
 .abilities .languages {
   position: relative;
@@ -890,85 +891,44 @@ header {
 
 /*PERSONAL ACTIVITIES*/
 /*CLUBS*/
-.snowboarding .image,
-.volleyball .image,
-.slopitch .image,
-.badminton .image {
+.snowboarding .hoverimage,
+.volleyball .hoverimage,
+.slopitch .hoverimage,
+.badminton .hoverimage {
   position: relative;
-  width: 40%;
+  width: 50%;
+  margin: auto;
 }
 /*SNOWBOARDING AND SLOPITCH TEXT*/
-.clubs .snowboarding,
-.clubs .slopitch {
+.snowboarding,
+.volleyball,
+.slopitch,
+.badminton {
   position: relative;
-  left: 50%;
   margin-bottom: 50px;
 }
+.snowboarding .text,
+.volleyball .text,
 .slopitch .text,
-.snowboarding .text {
-  position: absolute;
+.badminton .text {
+  position: relative;
   font-size: 30px;
-  top: 35%;
-  left: -32%;
+  text-align: center;
   opacity: 0.5;
   text-transform: uppercase;
 }
-.slopitch .text1 {
-  position: absolute;
-  font-size: 22px;
-  top: 50%;
-  left: -48.5%;
-}
-.slopitch .text2 {
-  position: absolute;
-  font-size: 18px;
-  top: 60%;
-  left: -48.5%;
-  opacity: 0.5;
-}
+
 /*END OF SNOWBOARDING AND SLOPITCH TEXT*/
 
 /*VOLLEYBALL AND BADMINTON TEXT*/
-.clubs .volleyball,
-.clubs .badminton {
-  position: relative;
-  left: 15%;
-  margin-bottom: 50px;
-}
-.volleyball .text,
-.badminton .text {
-  position: absolute;
-  font-size: 30px;
-  top: 22%;
-  left: 60%;
-  opacity: 0.5;
-  text-transform: uppercase;
-}
+
 .volleyball .text1 {
-  position: absolute;
+  position: relative;
   font-size: 22px;
-  top: 35%;
-  left: 45%;
 }
 .volleyball .text2 {
   position: absolute;
-  font-size: 18px;
-  top: 45%;
-  left: 45%;
-  opacity: 0.5;
-}
-.volleyball .text3 {
-  position: absolute;
   font-size: 22px;
-  top: 60%;
-  left: 45%;
-}
-.volleyball .text4 {
-  position: absolute;
-  font-size: 18px;
-  top: 70%;
-  left: 45%;
-  opacity: 0.5;
 }
 .badminton .text1 {
   position: absolute;
@@ -1110,34 +1070,17 @@ header {
 /*END OF CLUBS*/
 
 /*INTERESTS*/
-.interest {
-  position: relative;
-}
-.interest1,
-.interest2,
-.interest3,
-.interest4,
-.interest5 {
+.hoverimage {
   transition: 1s ease-in-out;
   position: relative;
   cursor: pointer;
-  width: 100%;
+  width: 50%;
   margin: 5px;
   justify-content: center;
   align-items: center;
   left: 15px;
   display: flex;
   flex-direction: column;
-}
-.interest4 {
-  width: 40%;
-}
-.interest5 {
-  width: 34%;
-}
-.interest4,
-.interest5 {
-  left: -2%;
 }
 .classone,
 .classtwo {
@@ -1147,11 +1090,7 @@ header {
   justify-content: center;
   align-items: center;
 }
-.interest1 .overlay,
-.interest2 .overlay,
-.interest3 .overlay,
-.interest4 .overlay,
-.interest5 .overlay {
+.overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -1164,19 +1103,11 @@ header {
   background: #eee;
   color: black;
 }
-.interest1:hover .overlay,
-.interest2:hover .overlay,
-.interest3:hover .overlay,
-.interest4:hover .overlay,
-.interest5:hover .overlay {
+.hoverimage:hover .overlay {
   opacity: 0.9;
   filter: brightness(0.5) grayscale(1);
 }
-.interest1 .content1,
-.interest2 .content1,
-.interest3 .content1,
-.interest4 .content1,
-.interest5 .content1 {
+.hoverimage .content1 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1184,11 +1115,6 @@ header {
   font-size: 20px;
   text-transform: uppercase;
   text-align: center;
-}
-.interest4 span {
-  text-transform: capitalize;
-  font-weight: 100;
-  font-size: 14px;
 }
 /*GUITAR, PHOTOGRAPHY, CUBING*/
 .guitar,
@@ -1203,7 +1129,7 @@ header {
   padding: 40px;
   width: 50%;
 }
-.interest .image {
+.hoverimage .image {
   display: flex;
   flex-direction: column;
 }
