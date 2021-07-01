@@ -432,8 +432,8 @@ header {
   text-transform: uppercase;
   text-align: center;
 }
-.education {
-  width: auto;
+.education .background {
+  width: 80%;
 }
 .UofA,
 .McGill,
