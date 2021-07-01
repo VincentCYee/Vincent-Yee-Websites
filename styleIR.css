@@ -5,6 +5,7 @@
   box-sizing: border-box;
 }
 html {
+  scroll-behavior: smooth;
   margin: 0;
   padding: 0;
   font-size: 10px;
@@ -390,6 +391,7 @@ header {
 .about .secondtext {
   font-size: 15px;
   color: rgb(255, 255, 255, 0.65);
+  font-weight: 300;
 }
 /*ABOUT MEDIA QUERIES*/
 @media screen and (max-width: 1213px) {
@@ -449,6 +451,7 @@ header {
 .education h3 {
   font-size: 14px;
   color: rgb(255, 255, 255, 0.65);
+  font-weight: 300;
 }
 @media screen and (max-width: 455px) {
   .experience .title,
@@ -561,6 +564,7 @@ header {
   position: relative;
   font-size: 14px;
   color: rgb(255, 255, 255, 0.65);
+  font-weight: 300;
 }
 .work .date,
 .communityinvolvement .date {
@@ -588,6 +592,7 @@ header {
   font-size: 14px;
   opacity: 0.5;
   margin-bottom: 20px;
+  font-weight: 300;
 }
 /*WORK AND VOLUNTEER MEDIA QUERIES*/
 @media screen and (max-width: 900px) {
@@ -698,7 +703,7 @@ header {
   font-size: 9px;
 }
 .checked {
-  color: #ffffff;
+  color: white;
   opacity: 0.2;
 }
 .rowpl {
@@ -759,22 +764,19 @@ header {
 .awardsscholarships,
 .certificates {
   position: relative;
-  justify-content: center;
-  align-items: center;
-  width: auto;
+  width: 50%;
 }
 .AandS,
 .cert {
   position: relative;
-  left: 25%;
   font-size: 20px;
 }
 .AandSTime,
 .certtime {
   position: relative;
-  left: 25%;
   opacity: 0.5;
   font-size: 15px;
+  font-weight: 300;
 }
 /*ACHIEVEMENTS MEDIA QUERIES*/
 @media screen and (max-width: 900px) {
@@ -840,70 +842,6 @@ header {
   text-transform: uppercase;
 }
 /*CLUBS & SPORTS MEDIA QUERIES*/
-@media screen and (max-width: 1550px) {
-  .volleyball .text,
-  .badminton .text {
-    font-size: 20px;
-    left: 55%;
-  }
-  .slopitch .text,
-  .snowboarding .text {
-    font-size: 20px;
-    left: -20%;
-  }
-  .volleyball .text1,
-  .volleyball .text2,
-  .volleyball .text3,
-  .volleyball .text4 {
-    font-size: 15px;
-    left: 42%;
-  }
-  .slopitch .text1,
-  .slopitch .text2 {
-    font-size: 15px;
-    left: -33%;
-  }
-  .badminton .text1,
-  .badminton .text2 {
-    font-size: 15px;
-    left: 43%;
-  }
-}
-@media screen and (max-width: 1130px) {
-  .snowboarding .image,
-  .volleyball .image,
-  .slopitch .image,
-  .badminton .image {
-    width: 30%;
-  }
-  .slopitch .text,
-  .snowboarding .text {
-    font-size: 20px;
-    left: -25%;
-  }
-  .volleyball .text,
-  .badminton .text {
-    font-size: 20px;
-    left: 45%;
-  }
-  .volleyball .text1,
-  .volleyball .text2,
-  .volleyball .text3,
-  .volleyball .text4 {
-    font-size: 15px;
-    left: 32%;
-  }
-  .slopitch .text1,
-  .slopitch .text2 {
-    font-size: 15px;
-    left: -38%;
-  }
-  .badminton .text1,
-  .badminton .text2 {
-    font-size: 15px;
-    left: 33%;
-  }
-}
 @media screen and (max-width: 975px) {
   .clubs .snowboarding,
   .clubs .slopitch,
@@ -931,24 +869,6 @@ header {
     left: 0;
     text-align: center;
   }
-  .slopitch .text1,
-  .volleyball .text1,
-  .volleyball .text3,
-  .badminton .text1 {
-    position: relative;
-    font-size: 15px;
-    left: 0;
-    text-align: center;
-  }
-  .slopitch .text2,
-  .volleyball .text2,
-  .volleyball .text4,
-  .badminton .text2 {
-    position: relative;
-    font-size: 12px;
-    left: 0;
-    text-align: center;
-  }
 }
 @media screen and (max-width: 550px) {
   .snowboarding .image,
@@ -968,7 +888,7 @@ header {
   transition: 1s ease-in-out;
   position: relative;
   cursor: pointer;
-  width: 45%;
+  width: 35%;
   margin: 5px;
   justify-content: center;
   align-items: center;
@@ -1167,6 +1087,9 @@ header {
   font-size: 30px;
   padding-bottom: 30px;
 }
+.bodytext h2 {
+  font-weight: 300;
+}
 .contact {
   background-color: #12273b;
 }
@@ -1228,3 +1151,36 @@ header {
   }
 }
 /*END OF FOOTER*/
+.copyrighttop #about {
+  width: 100%;
+  padding: 2rem 0;
+  position: relative;
+  color: white;
+}
+.copyrighttop #about a {
+  position: absolute;
+  transform: translateX(-50%);
+  font-size: 25px;
+  padding: 5px 50px;
+  text-decoration: none;
+  transition: 0.5s ease;
+}
+.down {
+  position: absolute;
+  width: 4rem;
+  height: 4rem;
+  left: 50%;
+  top: 300%;
+  transform: translateX(-50%);
+  border-radius: 100%;
+  display: flex;
+  animation: pulse 2s infinite;
+  cursor: pointer;
+  text-decoration: none;
+  transition: 1.5s ease;
+}
+.down i {
+  color: white;
+  font-size: 0.7rem;
+  margin: auto;
+}

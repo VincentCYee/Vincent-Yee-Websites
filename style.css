@@ -141,7 +141,6 @@ img{
     position: absolute;
     width: 3rem;
     height: 3rem;
-    background-color: white;
     left: 50%;
     transform: translateX(-50%);
     border-radius: 100%;
@@ -152,7 +151,8 @@ img{
     transition: 0.5s ease;
 }
 .down i{
-    color: #12273b;
+    /*color: #12273b;*/
+    color: white;
     font-size: 0.7rem;
     margin: auto; 
 }
