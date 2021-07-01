@@ -41,7 +41,6 @@ li {
 }
 p {
   font-size: 1.8rem;
-  font-weight: 300;
 }
 img {
   width: 100%;
@@ -61,7 +60,6 @@ img {
   font-size: 100px;
   color: rgba(255, 255, 255, 0.65);
   text-transform: uppercase;
-  font-weight: 300;
   position: relative;
   margin-bottom: 1rem;
 }
@@ -80,12 +78,11 @@ img {
 }
 .section-heading h6 {
   font-size: 20px;
-  font-weight: 300;
   color: white;
 }
 .line {
   opacity: 0.5;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   text-align: center;
   align-items: center;
   padding-top: 50px;
@@ -297,7 +294,7 @@ header {
 }
 .landing-text h6 {
   font-size: 25px;
-  font-weight: 400;
+  font-weight: 300;
 }
 /*END OF HEADER TEXT*/
 
@@ -442,15 +439,15 @@ header {
   padding: 25px 0;
 }
 .education h1 {
-  font-size: 20px;
+  font-size: 25px;
   margin-bottom: 10px;
 }
 .education h2 {
-  font-size: 14px;
+  font-size: 15px;
   margin-bottom: 10px;
 }
 .education h3 {
-  font-size: 15px;
+  font-size: 14px;
   color: rgb(255, 255, 255, 0.65);
 }
 @media screen and (max-width: 455px) {
@@ -553,17 +550,16 @@ header {
   color: white;
 }
 .work h1 {
-  font-size: 20px;
+  font-size: 22px;
   margin-bottom: 10px;
 }
 .work h2 {
-  font-size: 14px;
+  font-size: 15px;
   margin-bottom: 10px;
-  font-weight: 400;
 }
 .work p {
   position: relative;
-  font-size: 15px;
+  font-size: 14px;
   color: rgb(255, 255, 255, 0.65);
 }
 .work .date,
@@ -581,12 +577,11 @@ header {
   padding: 5rem;
   list-style: none;
   text-align: left;
-  width: 50%;
+  width: 40%;
   color: white;
 }
 .communityinvolvement h1 {
   font-size: 20px;
-  font-weight: 300;
   margin-bottom: 1rem;
 }
 .communityinvolvement h2 {
@@ -716,7 +711,7 @@ header {
 }
 .pl {
   width: 100%;
-  margin: 10px;
+  margin: 10px 0;
   text-align: center;
 }
 .programminglang {
