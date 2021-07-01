@@ -8,11 +8,11 @@ html {
   margin: 0;
   padding: 0;
   font-size: 10px;
-  font-family: "Poppins";
+  font-family: "Source Sans Pro", sans-serif;
   color: white;
   width: 100%;
   height: 100%;
-  background: url("imgIR/Background19.jpg");
+  background: url("imgIR/Background.jpg");
   background-size: cover;
   background-attachment: fixed;
   -o-background-size: cover;
@@ -167,7 +167,7 @@ header {
   font-size: 30px;
 }
 .nav-link {
-  font-family: "Poppins";
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 10px;
   padding: 1rem;
 }
@@ -286,24 +286,18 @@ header {
   width: 100%;
   text-align: center;
   z-index: 1;
+  color: rgba(255, 255, 255, 0.65);
 }
 .landing-text h1 {
-  font-size: 20rem;
-  font-family: "Poppins", cursive;
-  background: #113251;
-  background: -webkit-linear-gradient(bottom, #113251, #ffffff);
-  background: -moz-linear-gradient(bottom, #113251, #ffffff);
-  background: linear-gradient(to top, #113251, #ffffff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 60px;
   padding: 1rem;
   user-select: none;
   text-transform: uppercase;
 }
 .landing-text h6 {
-  font-size: 2rem;
+  font-size: 25px;
   font-weight: 400;
-  color: white;
 }
 /*END OF HEADER TEXT*/
 
@@ -398,6 +392,7 @@ header {
 }
 .about .secondtext {
   font-size: 15px;
+  color: rgb(255, 255, 255, 0.65);
 }
 /*ABOUT MEDIA QUERIES*/
 @media screen and (max-width: 1213px) {
@@ -437,45 +432,26 @@ header {
   text-transform: uppercase;
   text-align: center;
 }
+.education {
+  width: auto;
+}
 .UofA,
 .McGill,
 .MELHS {
   position: relative;
-  padding: 50px 0;
-}
-.UofA {
-  padding-bottom: 150px;
-}
-.UofA .description2 {
-  position: absolute;
-  left: 30%;
-  top: 30%;
-  font-size: 15px;
-  opacity: 0.6;
-  padding: 0 0 40px 0;
+  padding: 25px 0;
 }
 .education h1 {
   font-size: 20px;
+  margin-bottom: 10px;
 }
-.education .time {
+.education h2 {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.education h3 {
   font-size: 15px;
-  opacity: 0.6;
-}
-.education .description1 {
-  position: absolute;
-  left: 30%;
-  top: 0%;
-  font-size: 20px;
-  padding: 50px 0 0 0;
-}
-.McGill .description2,
-.MELHS .description2 {
-  position: absolute;
-  left: 30%;
-  top: 50%;
-  font-size: 15px;
-  opacity: 0.7;
-  padding: 0 0 40px 0;
+  color: rgb(255, 255, 255, 0.65);
 }
 @media screen and (max-width: 455px) {
   .experience .title,
@@ -526,6 +502,7 @@ header {
     left: 50%;
     transform: translateX(-50%);
     font-size: 18px;
+    margin-bottom: 10px;
   }
   .education .time {
     position: relative;
@@ -565,7 +542,6 @@ header {
 
 /*WORK AND COMUNNITY INVOLVEMENT*/
 .work ul {
-  border-left: 4px solid #221e3f;
   border-radius: 0.8rem;
   background-color: rgba(0, 0, 0, 0.4);
   margin: 0 auto;
@@ -573,48 +549,31 @@ header {
   padding: 5rem;
   list-style: none;
   text-align: left;
-  width: 70%;
+  width: 80%;
   color: white;
-  left: 10%;
 }
 .work h1 {
   font-size: 20px;
-  font-weight: 300;
-  margin-bottom: 1rem;
+  margin-bottom: 10px;
 }
 .work h2 {
   font-size: 14px;
-  opacity: 0.5;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  font-weight: 400;
 }
 .work p {
   position: relative;
   font-size: 15px;
+  color: rgb(255, 255, 255, 0.65);
 }
-.work .date {
+.work .date,
+.communityinvolvement .date {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   margin-bottom: 1rem;
   padding-bottom: 1rem;
   position: relative;
 }
-.work .date:last-of-type {
-  padding-bottom: 0;
-  margin-bottom: 0;
-  border: none;
-}
-.work .date::before {
-  position: absolute;
-  display: block;
-  top: 10%;
-  transform: translateY(-50%);
-  content: attr(data-date);
-  left: -23rem;
-  text-align: right;
-  min-width: 12rem;
-  font-size: 1.5rem;
-}
 .communityinvolvement ul {
-  border-left: 4px solid #221e3f;
   border-radius: 0.8rem;
   background-color: rgba(0, 0, 0, 0.4);
   margin: 0 auto;
@@ -622,9 +581,8 @@ header {
   padding: 5rem;
   list-style: none;
   text-align: left;
-  width: 70%;
+  width: 50%;
   color: white;
-  left: 10%;
 }
 .communityinvolvement h1 {
   font-size: 20px;
@@ -635,28 +593,6 @@ header {
   font-size: 14px;
   opacity: 0.5;
   margin-bottom: 20px;
-}
-.communityinvolvement .date {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  margin-bottom: 1rem;
-  padding-bottom: 1rem;
-  position: relative;
-}
-.communityinvolvementk .date:last-of-type {
-  padding-bottom: 0;
-  margin-bottom: 0;
-  border: none;
-}
-.communityinvolvement .date::before {
-  content: attr(data-date);
-  left: -22rem;
-  text-align: right;
-  min-width: 12rem;
-  font-size: 1.5rem;
-  position: absolute;
-  display: block;
-  top: 10%;
-  transform: translateY(-50%);
 }
 /*WORK AND VOLUNTEER MEDIA QUERIES*/
 @media screen and (max-width: 900px) {
@@ -830,6 +766,7 @@ header {
   position: relative;
   justify-content: center;
   align-items: center;
+  width: auto;
 }
 .AandS,
 .cert {
@@ -891,60 +828,22 @@ header {
 
 /*PERSONAL ACTIVITIES*/
 /*CLUBS*/
-.snowboarding .hoverimage,
-.volleyball .hoverimage,
-.slopitch .hoverimage,
-.badminton .hoverimage {
-  position: relative;
-  width: 50%;
-  margin: auto;
-}
-/*SNOWBOARDING AND SLOPITCH TEXT*/
-.snowboarding,
-.volleyball,
-.slopitch,
-.badminton {
+.clubs {
   position: relative;
   margin-bottom: 50px;
 }
-.snowboarding .text,
-.volleyball .text,
-.slopitch .text,
-.badminton .text {
+.clubs .hoverimage {
+  position: relative;
+  width: 45%;
+  margin: auto;
+}
+.clubs .text {
   position: relative;
   font-size: 30px;
   text-align: center;
   opacity: 0.5;
   text-transform: uppercase;
 }
-
-/*END OF SNOWBOARDING AND SLOPITCH TEXT*/
-
-/*VOLLEYBALL AND BADMINTON TEXT*/
-
-.volleyball .text1 {
-  position: relative;
-  font-size: 22px;
-}
-.volleyball .text2 {
-  position: absolute;
-  font-size: 22px;
-}
-.badminton .text1 {
-  position: absolute;
-  font-size: 22px;
-  top: 40%;
-  left: 45%;
-}
-.badminton .text2 {
-  position: absolute;
-  font-size: 18px;
-  top: 50%;
-  left: 45%;
-  opacity: 0.5;
-}
-/*END OF VOLLEYBALL AND BADMINTON TEXT*/
-
 /*CLUBS & SPORTS MEDIA QUERIES*/
 @media screen and (max-width: 1550px) {
   .volleyball .text,
@@ -1070,11 +969,11 @@ header {
 /*END OF CLUBS*/
 
 /*INTERESTS*/
-.hoverimage {
+.interests .hoverimage {
   transition: 1s ease-in-out;
   position: relative;
   cursor: pointer;
-  width: 50%;
+  width: 45%;
   margin: 5px;
   justify-content: center;
   align-items: center;
@@ -1118,8 +1017,7 @@ header {
 }
 /*GUITAR, PHOTOGRAPHY, CUBING*/
 .guitar,
-.photography,
-.cubing {
+.photography {
   position: relative;
   left: 50%;
   transform: translateX(-50%);
@@ -1129,19 +1027,9 @@ header {
   padding: 40px;
   width: 50%;
 }
-.hoverimage .image {
+.interest .hoverimage .image {
   display: flex;
   flex-direction: column;
-}
-.guitar .text,
-.photography .text,
-.cubing .text {
-  font-size: 25px;
-}
-.guitar .text1,
-.photography .text1,
-.cubing .text1 {
-  font-size: 18px;
 }
 /*END OF GUITAR, PHOTOGRAPHY, CUBING*/
 
@@ -1162,14 +1050,6 @@ header {
 }
 .project3 {
   width: 48.3%;
-}
-.classone {
-  display: flex;
-  flex-direction: row;
-}
-.classtwo {
-  display: flex;
-  flex-direction: row;
 }
 .project1 .overlay,
 .project2 .overlay,
