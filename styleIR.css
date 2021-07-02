@@ -300,34 +300,12 @@ header {
 /*END OF HEADER TEXT*/
 
 /*HEADER MEDIA QUERIES*/
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 700px) {
   .landing-text h1 {
-    font-size: 150px;
+    font-size: 40px;
   }
-}
-@media screen and (max-width: 945px) {
-  .landing-text h1 {
-    font-size: 120px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .landing-text h1 {
-    font-size: 100px;
-  }
-}
-@media screen and (max-width: 640px) {
-  .landing-text h1 {
-    font-size: 80px;
-  }
-}
-@media screen and (max-width: 520px) {
-  .landing-text h1 {
-    font-size: 60px;
-  }
-}
-@media screen and (max-width: 400px) {
-  .landing-text h1 {
-    font-size: 50px;
+  .landing-text h6 {
+    font-size: 20px;
   }
 }
 /*END OF HEADER MEDIA QUERIES*/
@@ -389,16 +367,11 @@ header {
   font-size: 25px;
 }
 .about .secondtext {
-  font-size: 15px;
+  font-size: 14px;
   color: rgb(255, 255, 255, 0.65);
   font-weight: 300;
 }
 /*ABOUT MEDIA QUERIES*/
-@media screen and (max-width: 1213px) {
-  .about .secondtext {
-    font-size: 12px;
-  }
-}
 @media screen and (max-width: 990px) {
   .about .firsttext {
     font-size: 20px;
@@ -464,26 +437,12 @@ header {
 /*END OF EDUCATION*/
 
 /*EDUCATION MEDIA QUERIES*/
-@media screen and (max-width: 1200px) {
-  .education .description2 {
-    font-size: 14px;
-  }
-  .education .time {
-    font-size: 14px;
-  }
-}
 @media screen and (max-width: 1010px) {
   .education h1 {
-    font-size: 16px;
+    font-size: 20px;
   }
-  .education .description1 {
-    font-size: 16px;
-  }
-  .education .description2 {
-    font-size: 13px;
-  }
-  .education .time {
-    font-size: 13px;
+  .education h2 {
+    font-size: 14px;
   }
 }
 @media screen and (max-width: 855px) {
@@ -491,51 +450,10 @@ header {
   .McGill,
   .MELHS {
     position: relative;
-    left: 5%;
     padding: 0px 0;
   }
   .UofA {
     padding-bottom: 40px;
-  }
-  .UofA h1 {
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 18px;
-    margin-bottom: 10px;
-  }
-  .education .time {
-    position: relative;
-    font-size: 13px;
-  }
-  .McGill h1 {
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 18px;
-  }
-  .MELHS h1 {
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 18px;
-  }
-  .education .description1 {
-    position: relative;
-    left: 0%;
-    padding: 5px 0 0 0;
-  }
-  .education .description2 {
-    position: relative;
-    left: 0%;
-  }
-  .MELHS h1 {
-    padding-top: 30px;
-  }
-}
-@media screen and (max-width: 500px) {
-  .education .description1 {
-    font-size: 14px;
   }
 }
 /*END OF EDUCATION MEDIA QUERIES*/
@@ -799,26 +717,6 @@ header {
     font-size: 12px;
   }
 }
-@media screen and (max-width: 670px) {
-  .AandS,
-  .cert {
-    left: 15%;
-  }
-  .AandSTime,
-  .certtime {
-    left: 15%;
-  }
-}
-@media screen and (max-width: 585px) {
-  .AandS,
-  .cert {
-    left: 10%;
-  }
-  .AandSTime,
-  .certtime {
-    left: 10%;
-  }
-}
 /*ACHIEVEMENTS MEDIA QUERIES*/
 
 /*END OF ACHIEVEMENTS*/
@@ -889,10 +787,9 @@ header {
   position: relative;
   cursor: pointer;
   width: 35%;
-  margin: 5px;
+  margin: 10px;
   justify-content: center;
   align-items: center;
-  left: 15px;
   display: flex;
   flex-direction: column;
 }
@@ -1018,28 +915,21 @@ header {
 
 /*INTEREST AND PROJECT MEDIA QUERIES*/
 @media screen and (max-width: 1250px) {
-  .classone {
-    display: initial;
-    width: 10%;
-  }
+  .classone,
   .classtwo {
-    display: initial;
-    width: 100%;
+    display: inline;
   }
   .project1,
   .project2,
   .project3 {
     width: 70%;
-    left: 15%;
+    margin: auto;
+    padding: 10px;
   }
-
-  .interest1,
-  .interest2,
-  .interest3,
-  .interest4,
-  .interest5 {
-    width: 70%;
-    left: 15%;
+  .interests .hoverimage {
+    width: 50%;
+    margin: auto;
+    padding: 10px;
   }
 }
 @media screen and (max-width: 820px) {
@@ -1151,8 +1041,11 @@ header {
   }
 }
 /*END OF FOOTER*/
+.copyrighttop {
+  padding: 100px 0 0 0;
+}
 .copyrighttop #about {
-  width: 100%;
+  width: auto;
   padding: 2rem 0;
   position: relative;
   color: white;
@@ -1170,7 +1063,6 @@ header {
   width: 4rem;
   height: 4rem;
   left: 50%;
-  top: 300%;
   transform: translateX(-50%);
   border-radius: 100%;
   display: flex;
